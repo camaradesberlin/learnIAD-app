@@ -55,7 +55,7 @@ pacman::p_load(dplyr,
                ggpubr,
                learnr)
 
-setwd("S:/C01/iBikE/Studien/BIH-COReS/Teaching Advanced Course/Web Course/learnr/learnIAD-MA")
+#setwd("S:/C01/iBikE/Studien/BIH-COReS/Teaching Advanced Course/Web Course/learnr/learnIAD-MA")
 
 DatIAD <- readRDS("IADdata.Rds") # load data
 
