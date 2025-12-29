@@ -155,6 +155,7 @@ models, here is a stats introduction.</p>
 <video class="video-fluid" controls>
 <source src="www/stats intro.mp4" type="video/mp4">
 </video>
+<pre><code>## Warning: package &#39;learnr&#39; was built under R version 4.4.3</code></pre>
 </div>
 </div>
 <div id="section-iad-theory" class="section level2">
@@ -286,7 +287,7 @@ some ggplot):</p>
   labs(colour = &quot;Treatment&quot;) + ylab(&quot;NSS&quot;) + xlab(&quot;Time in days&quot;) +
   scale_x_continuous(breaks = c(0, 1, 3, 7, 14)) +
   geom_point(aes(x = AttritionDay), alpha = 0.4, shape = 25) # add attrition as triangles</code></pre>
-<p><img src="online-script_files/figure-html/Plotting%20of%20longitudinal%20data%20-%20spaghetti%20plot-1.png" width="624" /></p>
+<p><img src="online_script_files/figure-html/Plotting%20of%20longitudinal%20data%20-%20spaghetti%20plot-1.png" width="624" /></p>
 <p>Plot description:<br />
 There measurements in the outcome NSS taken before stroke (0), at the
 day of stroke (1), and at day 3, 7, and 14 afterwards.<br />
@@ -638,23 +639,23 @@ summary(mortality_1)</code></pre>
 <pre class="r"><code># a nice output table with ORs
 tbl_regression(mortality_1,
                exponentiate = T) # calculates ORs</code></pre>
-<div id="tcopchwsjf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#tcopchwsjf table {
+<div id="dpoyeoiphj" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#dpoyeoiphj table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#tcopchwsjf thead, #tcopchwsjf tbody, #tcopchwsjf tfoot, #tcopchwsjf tr, #tcopchwsjf td, #tcopchwsjf th {
+#dpoyeoiphj thead, #dpoyeoiphj tbody, #dpoyeoiphj tfoot, #dpoyeoiphj tr, #dpoyeoiphj td, #dpoyeoiphj th {
   border-style: none;
 }
 
-#tcopchwsjf p {
+#dpoyeoiphj p {
   margin: 0;
   padding: 0;
 }
 
-#tcopchwsjf .gt_table {
+#dpoyeoiphj .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -680,12 +681,12 @@ tbl_regression(mortality_1,
   border-left-color: #D3D3D3;
 }
 
-#tcopchwsjf .gt_caption {
+#dpoyeoiphj .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#tcopchwsjf .gt_title {
+#dpoyeoiphj .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -697,7 +698,7 @@ tbl_regression(mortality_1,
   border-bottom-width: 0;
 }
 
-#tcopchwsjf .gt_subtitle {
+#dpoyeoiphj .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -709,7 +710,7 @@ tbl_regression(mortality_1,
   border-top-width: 0;
 }
 
-#tcopchwsjf .gt_heading {
+#dpoyeoiphj .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -721,13 +722,13 @@ tbl_regression(mortality_1,
   border-right-color: #D3D3D3;
 }
 
-#tcopchwsjf .gt_bottom_border {
+#dpoyeoiphj .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#tcopchwsjf .gt_col_headings {
+#dpoyeoiphj .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -742,7 +743,7 @@ tbl_regression(mortality_1,
   border-right-color: #D3D3D3;
 }
 
-#tcopchwsjf .gt_col_heading {
+#dpoyeoiphj .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -762,7 +763,7 @@ tbl_regression(mortality_1,
   overflow-x: hidden;
 }
 
-#tcopchwsjf .gt_column_spanner_outer {
+#dpoyeoiphj .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -774,15 +775,15 @@ tbl_regression(mortality_1,
   padding-right: 4px;
 }
 
-#tcopchwsjf .gt_column_spanner_outer:first-child {
+#dpoyeoiphj .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#tcopchwsjf .gt_column_spanner_outer:last-child {
+#dpoyeoiphj .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#tcopchwsjf .gt_column_spanner {
+#dpoyeoiphj .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -794,11 +795,11 @@ tbl_regression(mortality_1,
   width: 100%;
 }
 
-#tcopchwsjf .gt_spanner_row {
+#dpoyeoiphj .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#tcopchwsjf .gt_group_heading {
+#dpoyeoiphj .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -824,7 +825,7 @@ tbl_regression(mortality_1,
   text-align: left;
 }
 
-#tcopchwsjf .gt_empty_group_heading {
+#dpoyeoiphj .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -839,15 +840,15 @@ tbl_regression(mortality_1,
   vertical-align: middle;
 }
 
-#tcopchwsjf .gt_from_md > :first-child {
+#dpoyeoiphj .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#tcopchwsjf .gt_from_md > :last-child {
+#dpoyeoiphj .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#tcopchwsjf .gt_row {
+#dpoyeoiphj .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -866,7 +867,7 @@ tbl_regression(mortality_1,
   overflow-x: hidden;
 }
 
-#tcopchwsjf .gt_stub {
+#dpoyeoiphj .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -879,7 +880,7 @@ tbl_regression(mortality_1,
   padding-right: 5px;
 }
 
-#tcopchwsjf .gt_stub_row_group {
+#dpoyeoiphj .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -893,15 +894,15 @@ tbl_regression(mortality_1,
   vertical-align: top;
 }
 
-#tcopchwsjf .gt_row_group_first td {
+#dpoyeoiphj .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#tcopchwsjf .gt_row_group_first th {
+#dpoyeoiphj .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#tcopchwsjf .gt_summary_row {
+#dpoyeoiphj .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -911,16 +912,16 @@ tbl_regression(mortality_1,
   padding-right: 5px;
 }
 
-#tcopchwsjf .gt_first_summary_row {
+#dpoyeoiphj .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#tcopchwsjf .gt_first_summary_row.thick {
+#dpoyeoiphj .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#tcopchwsjf .gt_last_summary_row {
+#dpoyeoiphj .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -930,7 +931,7 @@ tbl_regression(mortality_1,
   border-bottom-color: #D3D3D3;
 }
 
-#tcopchwsjf .gt_grand_summary_row {
+#dpoyeoiphj .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -940,7 +941,7 @@ tbl_regression(mortality_1,
   padding-right: 5px;
 }
 
-#tcopchwsjf .gt_first_grand_summary_row {
+#dpoyeoiphj .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -950,7 +951,7 @@ tbl_regression(mortality_1,
   border-top-color: #D3D3D3;
 }
 
-#tcopchwsjf .gt_last_grand_summary_row_top {
+#dpoyeoiphj .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -960,11 +961,11 @@ tbl_regression(mortality_1,
   border-bottom-color: #D3D3D3;
 }
 
-#tcopchwsjf .gt_striped {
+#dpoyeoiphj .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#tcopchwsjf .gt_table_body {
+#dpoyeoiphj .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -973,7 +974,7 @@ tbl_regression(mortality_1,
   border-bottom-color: #D3D3D3;
 }
 
-#tcopchwsjf .gt_footnotes {
+#dpoyeoiphj .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -987,7 +988,7 @@ tbl_regression(mortality_1,
   border-right-color: #D3D3D3;
 }
 
-#tcopchwsjf .gt_footnote {
+#dpoyeoiphj .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -996,7 +997,7 @@ tbl_regression(mortality_1,
   padding-right: 5px;
 }
 
-#tcopchwsjf .gt_sourcenotes {
+#dpoyeoiphj .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1010,7 +1011,7 @@ tbl_regression(mortality_1,
   border-right-color: #D3D3D3;
 }
 
-#tcopchwsjf .gt_sourcenote {
+#dpoyeoiphj .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1018,72 +1019,72 @@ tbl_regression(mortality_1,
   padding-right: 5px;
 }
 
-#tcopchwsjf .gt_left {
+#dpoyeoiphj .gt_left {
   text-align: left;
 }
 
-#tcopchwsjf .gt_center {
+#dpoyeoiphj .gt_center {
   text-align: center;
 }
 
-#tcopchwsjf .gt_right {
+#dpoyeoiphj .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#tcopchwsjf .gt_font_normal {
+#dpoyeoiphj .gt_font_normal {
   font-weight: normal;
 }
 
-#tcopchwsjf .gt_font_bold {
+#dpoyeoiphj .gt_font_bold {
   font-weight: bold;
 }
 
-#tcopchwsjf .gt_font_italic {
+#dpoyeoiphj .gt_font_italic {
   font-style: italic;
 }
 
-#tcopchwsjf .gt_super {
+#dpoyeoiphj .gt_super {
   font-size: 65%;
 }
 
-#tcopchwsjf .gt_footnote_marks {
+#dpoyeoiphj .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#tcopchwsjf .gt_asterisk {
+#dpoyeoiphj .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#tcopchwsjf .gt_indent_1 {
+#dpoyeoiphj .gt_indent_1 {
   text-indent: 5px;
 }
 
-#tcopchwsjf .gt_indent_2 {
+#dpoyeoiphj .gt_indent_2 {
   text-indent: 10px;
 }
 
-#tcopchwsjf .gt_indent_3 {
+#dpoyeoiphj .gt_indent_3 {
   text-indent: 15px;
 }
 
-#tcopchwsjf .gt_indent_4 {
+#dpoyeoiphj .gt_indent_4 {
   text-indent: 20px;
 }
 
-#tcopchwsjf .gt_indent_5 {
+#dpoyeoiphj .gt_indent_5 {
   text-indent: 25px;
 }
 
-#tcopchwsjf .katex-display {
+#dpoyeoiphj .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#tcopchwsjf div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#dpoyeoiphj div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1193,23 +1194,23 @@ but varying odds ratios.</p>
 ## AIC: 121.19
 ## 
 ## Number of Fisher Scoring iterations: 4</code></pre>
-<div id="kvfxyljmqm" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#kvfxyljmqm table {
+<div id="ozxolbtyzl" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ozxolbtyzl table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#kvfxyljmqm thead, #kvfxyljmqm tbody, #kvfxyljmqm tfoot, #kvfxyljmqm tr, #kvfxyljmqm td, #kvfxyljmqm th {
+#ozxolbtyzl thead, #ozxolbtyzl tbody, #ozxolbtyzl tfoot, #ozxolbtyzl tr, #ozxolbtyzl td, #ozxolbtyzl th {
   border-style: none;
 }
 
-#kvfxyljmqm p {
+#ozxolbtyzl p {
   margin: 0;
   padding: 0;
 }
 
-#kvfxyljmqm .gt_table {
+#ozxolbtyzl .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1235,12 +1236,12 @@ but varying odds ratios.</p>
   border-left-color: #D3D3D3;
 }
 
-#kvfxyljmqm .gt_caption {
+#ozxolbtyzl .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#kvfxyljmqm .gt_title {
+#ozxolbtyzl .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1252,7 +1253,7 @@ but varying odds ratios.</p>
   border-bottom-width: 0;
 }
 
-#kvfxyljmqm .gt_subtitle {
+#ozxolbtyzl .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1264,7 +1265,7 @@ but varying odds ratios.</p>
   border-top-width: 0;
 }
 
-#kvfxyljmqm .gt_heading {
+#ozxolbtyzl .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1276,13 +1277,13 @@ but varying odds ratios.</p>
   border-right-color: #D3D3D3;
 }
 
-#kvfxyljmqm .gt_bottom_border {
+#ozxolbtyzl .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#kvfxyljmqm .gt_col_headings {
+#ozxolbtyzl .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1297,7 +1298,7 @@ but varying odds ratios.</p>
   border-right-color: #D3D3D3;
 }
 
-#kvfxyljmqm .gt_col_heading {
+#ozxolbtyzl .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1317,7 +1318,7 @@ but varying odds ratios.</p>
   overflow-x: hidden;
 }
 
-#kvfxyljmqm .gt_column_spanner_outer {
+#ozxolbtyzl .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1329,15 +1330,15 @@ but varying odds ratios.</p>
   padding-right: 4px;
 }
 
-#kvfxyljmqm .gt_column_spanner_outer:first-child {
+#ozxolbtyzl .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#kvfxyljmqm .gt_column_spanner_outer:last-child {
+#ozxolbtyzl .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#kvfxyljmqm .gt_column_spanner {
+#ozxolbtyzl .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1349,11 +1350,11 @@ but varying odds ratios.</p>
   width: 100%;
 }
 
-#kvfxyljmqm .gt_spanner_row {
+#ozxolbtyzl .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#kvfxyljmqm .gt_group_heading {
+#ozxolbtyzl .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1379,7 +1380,7 @@ but varying odds ratios.</p>
   text-align: left;
 }
 
-#kvfxyljmqm .gt_empty_group_heading {
+#ozxolbtyzl .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1394,15 +1395,15 @@ but varying odds ratios.</p>
   vertical-align: middle;
 }
 
-#kvfxyljmqm .gt_from_md > :first-child {
+#ozxolbtyzl .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#kvfxyljmqm .gt_from_md > :last-child {
+#ozxolbtyzl .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#kvfxyljmqm .gt_row {
+#ozxolbtyzl .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1421,7 +1422,7 @@ but varying odds ratios.</p>
   overflow-x: hidden;
 }
 
-#kvfxyljmqm .gt_stub {
+#ozxolbtyzl .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1434,7 +1435,7 @@ but varying odds ratios.</p>
   padding-right: 5px;
 }
 
-#kvfxyljmqm .gt_stub_row_group {
+#ozxolbtyzl .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1448,15 +1449,15 @@ but varying odds ratios.</p>
   vertical-align: top;
 }
 
-#kvfxyljmqm .gt_row_group_first td {
+#ozxolbtyzl .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#kvfxyljmqm .gt_row_group_first th {
+#ozxolbtyzl .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#kvfxyljmqm .gt_summary_row {
+#ozxolbtyzl .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1466,16 +1467,16 @@ but varying odds ratios.</p>
   padding-right: 5px;
 }
 
-#kvfxyljmqm .gt_first_summary_row {
+#ozxolbtyzl .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#kvfxyljmqm .gt_first_summary_row.thick {
+#ozxolbtyzl .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#kvfxyljmqm .gt_last_summary_row {
+#ozxolbtyzl .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1485,7 +1486,7 @@ but varying odds ratios.</p>
   border-bottom-color: #D3D3D3;
 }
 
-#kvfxyljmqm .gt_grand_summary_row {
+#ozxolbtyzl .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1495,7 +1496,7 @@ but varying odds ratios.</p>
   padding-right: 5px;
 }
 
-#kvfxyljmqm .gt_first_grand_summary_row {
+#ozxolbtyzl .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1505,7 +1506,7 @@ but varying odds ratios.</p>
   border-top-color: #D3D3D3;
 }
 
-#kvfxyljmqm .gt_last_grand_summary_row_top {
+#ozxolbtyzl .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1515,11 +1516,11 @@ but varying odds ratios.</p>
   border-bottom-color: #D3D3D3;
 }
 
-#kvfxyljmqm .gt_striped {
+#ozxolbtyzl .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#kvfxyljmqm .gt_table_body {
+#ozxolbtyzl .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1528,7 +1529,7 @@ but varying odds ratios.</p>
   border-bottom-color: #D3D3D3;
 }
 
-#kvfxyljmqm .gt_footnotes {
+#ozxolbtyzl .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1542,7 +1543,7 @@ but varying odds ratios.</p>
   border-right-color: #D3D3D3;
 }
 
-#kvfxyljmqm .gt_footnote {
+#ozxolbtyzl .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1551,7 +1552,7 @@ but varying odds ratios.</p>
   padding-right: 5px;
 }
 
-#kvfxyljmqm .gt_sourcenotes {
+#ozxolbtyzl .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1565,7 +1566,7 @@ but varying odds ratios.</p>
   border-right-color: #D3D3D3;
 }
 
-#kvfxyljmqm .gt_sourcenote {
+#ozxolbtyzl .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1573,72 +1574,72 @@ but varying odds ratios.</p>
   padding-right: 5px;
 }
 
-#kvfxyljmqm .gt_left {
+#ozxolbtyzl .gt_left {
   text-align: left;
 }
 
-#kvfxyljmqm .gt_center {
+#ozxolbtyzl .gt_center {
   text-align: center;
 }
 
-#kvfxyljmqm .gt_right {
+#ozxolbtyzl .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#kvfxyljmqm .gt_font_normal {
+#ozxolbtyzl .gt_font_normal {
   font-weight: normal;
 }
 
-#kvfxyljmqm .gt_font_bold {
+#ozxolbtyzl .gt_font_bold {
   font-weight: bold;
 }
 
-#kvfxyljmqm .gt_font_italic {
+#ozxolbtyzl .gt_font_italic {
   font-style: italic;
 }
 
-#kvfxyljmqm .gt_super {
+#ozxolbtyzl .gt_super {
   font-size: 65%;
 }
 
-#kvfxyljmqm .gt_footnote_marks {
+#ozxolbtyzl .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#kvfxyljmqm .gt_asterisk {
+#ozxolbtyzl .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#kvfxyljmqm .gt_indent_1 {
+#ozxolbtyzl .gt_indent_1 {
   text-indent: 5px;
 }
 
-#kvfxyljmqm .gt_indent_2 {
+#ozxolbtyzl .gt_indent_2 {
   text-indent: 10px;
 }
 
-#kvfxyljmqm .gt_indent_3 {
+#ozxolbtyzl .gt_indent_3 {
   text-indent: 15px;
 }
 
-#kvfxyljmqm .gt_indent_4 {
+#ozxolbtyzl .gt_indent_4 {
   text-indent: 20px;
 }
 
-#kvfxyljmqm .gt_indent_5 {
+#ozxolbtyzl .gt_indent_5 {
   text-indent: 25px;
 }
 
-#kvfxyljmqm .katex-display {
+#ozxolbtyzl .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#kvfxyljmqm div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#ozxolbtyzl div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1696,23 +1697,23 @@ but varying odds ratios.</p>
 ## AIC: 92.014
 ## 
 ## Number of Fisher Scoring iterations: 5</code></pre>
-<div id="omfrmubwth" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#omfrmubwth table {
+<div id="qbirfavehl" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#qbirfavehl table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#omfrmubwth thead, #omfrmubwth tbody, #omfrmubwth tfoot, #omfrmubwth tr, #omfrmubwth td, #omfrmubwth th {
+#qbirfavehl thead, #qbirfavehl tbody, #qbirfavehl tfoot, #qbirfavehl tr, #qbirfavehl td, #qbirfavehl th {
   border-style: none;
 }
 
-#omfrmubwth p {
+#qbirfavehl p {
   margin: 0;
   padding: 0;
 }
 
-#omfrmubwth .gt_table {
+#qbirfavehl .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1738,12 +1739,12 @@ but varying odds ratios.</p>
   border-left-color: #D3D3D3;
 }
 
-#omfrmubwth .gt_caption {
+#qbirfavehl .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#omfrmubwth .gt_title {
+#qbirfavehl .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1755,7 +1756,7 @@ but varying odds ratios.</p>
   border-bottom-width: 0;
 }
 
-#omfrmubwth .gt_subtitle {
+#qbirfavehl .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1767,7 +1768,7 @@ but varying odds ratios.</p>
   border-top-width: 0;
 }
 
-#omfrmubwth .gt_heading {
+#qbirfavehl .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1779,13 +1780,13 @@ but varying odds ratios.</p>
   border-right-color: #D3D3D3;
 }
 
-#omfrmubwth .gt_bottom_border {
+#qbirfavehl .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#omfrmubwth .gt_col_headings {
+#qbirfavehl .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1800,7 +1801,7 @@ but varying odds ratios.</p>
   border-right-color: #D3D3D3;
 }
 
-#omfrmubwth .gt_col_heading {
+#qbirfavehl .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1820,7 +1821,7 @@ but varying odds ratios.</p>
   overflow-x: hidden;
 }
 
-#omfrmubwth .gt_column_spanner_outer {
+#qbirfavehl .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1832,15 +1833,15 @@ but varying odds ratios.</p>
   padding-right: 4px;
 }
 
-#omfrmubwth .gt_column_spanner_outer:first-child {
+#qbirfavehl .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#omfrmubwth .gt_column_spanner_outer:last-child {
+#qbirfavehl .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#omfrmubwth .gt_column_spanner {
+#qbirfavehl .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1852,11 +1853,11 @@ but varying odds ratios.</p>
   width: 100%;
 }
 
-#omfrmubwth .gt_spanner_row {
+#qbirfavehl .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#omfrmubwth .gt_group_heading {
+#qbirfavehl .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1882,7 +1883,7 @@ but varying odds ratios.</p>
   text-align: left;
 }
 
-#omfrmubwth .gt_empty_group_heading {
+#qbirfavehl .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1897,15 +1898,15 @@ but varying odds ratios.</p>
   vertical-align: middle;
 }
 
-#omfrmubwth .gt_from_md > :first-child {
+#qbirfavehl .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#omfrmubwth .gt_from_md > :last-child {
+#qbirfavehl .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#omfrmubwth .gt_row {
+#qbirfavehl .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1924,7 +1925,7 @@ but varying odds ratios.</p>
   overflow-x: hidden;
 }
 
-#omfrmubwth .gt_stub {
+#qbirfavehl .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1937,7 +1938,7 @@ but varying odds ratios.</p>
   padding-right: 5px;
 }
 
-#omfrmubwth .gt_stub_row_group {
+#qbirfavehl .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1951,15 +1952,15 @@ but varying odds ratios.</p>
   vertical-align: top;
 }
 
-#omfrmubwth .gt_row_group_first td {
+#qbirfavehl .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#omfrmubwth .gt_row_group_first th {
+#qbirfavehl .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#omfrmubwth .gt_summary_row {
+#qbirfavehl .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1969,16 +1970,16 @@ but varying odds ratios.</p>
   padding-right: 5px;
 }
 
-#omfrmubwth .gt_first_summary_row {
+#qbirfavehl .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#omfrmubwth .gt_first_summary_row.thick {
+#qbirfavehl .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#omfrmubwth .gt_last_summary_row {
+#qbirfavehl .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1988,7 +1989,7 @@ but varying odds ratios.</p>
   border-bottom-color: #D3D3D3;
 }
 
-#omfrmubwth .gt_grand_summary_row {
+#qbirfavehl .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1998,7 +1999,7 @@ but varying odds ratios.</p>
   padding-right: 5px;
 }
 
-#omfrmubwth .gt_first_grand_summary_row {
+#qbirfavehl .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2008,7 +2009,7 @@ but varying odds ratios.</p>
   border-top-color: #D3D3D3;
 }
 
-#omfrmubwth .gt_last_grand_summary_row_top {
+#qbirfavehl .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2018,11 +2019,11 @@ but varying odds ratios.</p>
   border-bottom-color: #D3D3D3;
 }
 
-#omfrmubwth .gt_striped {
+#qbirfavehl .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#omfrmubwth .gt_table_body {
+#qbirfavehl .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2031,7 +2032,7 @@ but varying odds ratios.</p>
   border-bottom-color: #D3D3D3;
 }
 
-#omfrmubwth .gt_footnotes {
+#qbirfavehl .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2045,7 +2046,7 @@ but varying odds ratios.</p>
   border-right-color: #D3D3D3;
 }
 
-#omfrmubwth .gt_footnote {
+#qbirfavehl .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2054,7 +2055,7 @@ but varying odds ratios.</p>
   padding-right: 5px;
 }
 
-#omfrmubwth .gt_sourcenotes {
+#qbirfavehl .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2068,7 +2069,7 @@ but varying odds ratios.</p>
   border-right-color: #D3D3D3;
 }
 
-#omfrmubwth .gt_sourcenote {
+#qbirfavehl .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2076,72 +2077,72 @@ but varying odds ratios.</p>
   padding-right: 5px;
 }
 
-#omfrmubwth .gt_left {
+#qbirfavehl .gt_left {
   text-align: left;
 }
 
-#omfrmubwth .gt_center {
+#qbirfavehl .gt_center {
   text-align: center;
 }
 
-#omfrmubwth .gt_right {
+#qbirfavehl .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#omfrmubwth .gt_font_normal {
+#qbirfavehl .gt_font_normal {
   font-weight: normal;
 }
 
-#omfrmubwth .gt_font_bold {
+#qbirfavehl .gt_font_bold {
   font-weight: bold;
 }
 
-#omfrmubwth .gt_font_italic {
+#qbirfavehl .gt_font_italic {
   font-style: italic;
 }
 
-#omfrmubwth .gt_super {
+#qbirfavehl .gt_super {
   font-size: 65%;
 }
 
-#omfrmubwth .gt_footnote_marks {
+#qbirfavehl .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#omfrmubwth .gt_asterisk {
+#qbirfavehl .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#omfrmubwth .gt_indent_1 {
+#qbirfavehl .gt_indent_1 {
   text-indent: 5px;
 }
 
-#omfrmubwth .gt_indent_2 {
+#qbirfavehl .gt_indent_2 {
   text-indent: 10px;
 }
 
-#omfrmubwth .gt_indent_3 {
+#qbirfavehl .gt_indent_3 {
   text-indent: 15px;
 }
 
-#omfrmubwth .gt_indent_4 {
+#qbirfavehl .gt_indent_4 {
   text-indent: 20px;
 }
 
-#omfrmubwth .gt_indent_5 {
+#qbirfavehl .gt_indent_5 {
   text-indent: 25px;
 }
 
-#omfrmubwth .katex-display {
+#qbirfavehl .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#omfrmubwth div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#qbirfavehl div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -2199,23 +2200,23 @@ but varying odds ratios.</p>
 ## AIC: 127.6
 ## 
 ## Number of Fisher Scoring iterations: 4</code></pre>
-<div id="zeyhcwjjqw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#zeyhcwjjqw table {
+<div id="hijkmdkjgp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#hijkmdkjgp table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#zeyhcwjjqw thead, #zeyhcwjjqw tbody, #zeyhcwjjqw tfoot, #zeyhcwjjqw tr, #zeyhcwjjqw td, #zeyhcwjjqw th {
+#hijkmdkjgp thead, #hijkmdkjgp tbody, #hijkmdkjgp tfoot, #hijkmdkjgp tr, #hijkmdkjgp td, #hijkmdkjgp th {
   border-style: none;
 }
 
-#zeyhcwjjqw p {
+#hijkmdkjgp p {
   margin: 0;
   padding: 0;
 }
 
-#zeyhcwjjqw .gt_table {
+#hijkmdkjgp .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -2241,12 +2242,12 @@ but varying odds ratios.</p>
   border-left-color: #D3D3D3;
 }
 
-#zeyhcwjjqw .gt_caption {
+#hijkmdkjgp .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#zeyhcwjjqw .gt_title {
+#hijkmdkjgp .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2258,7 +2259,7 @@ but varying odds ratios.</p>
   border-bottom-width: 0;
 }
 
-#zeyhcwjjqw .gt_subtitle {
+#hijkmdkjgp .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2270,7 +2271,7 @@ but varying odds ratios.</p>
   border-top-width: 0;
 }
 
-#zeyhcwjjqw .gt_heading {
+#hijkmdkjgp .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2282,13 +2283,13 @@ but varying odds ratios.</p>
   border-right-color: #D3D3D3;
 }
 
-#zeyhcwjjqw .gt_bottom_border {
+#hijkmdkjgp .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#zeyhcwjjqw .gt_col_headings {
+#hijkmdkjgp .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2303,7 +2304,7 @@ but varying odds ratios.</p>
   border-right-color: #D3D3D3;
 }
 
-#zeyhcwjjqw .gt_col_heading {
+#hijkmdkjgp .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2323,7 +2324,7 @@ but varying odds ratios.</p>
   overflow-x: hidden;
 }
 
-#zeyhcwjjqw .gt_column_spanner_outer {
+#hijkmdkjgp .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2335,15 +2336,15 @@ but varying odds ratios.</p>
   padding-right: 4px;
 }
 
-#zeyhcwjjqw .gt_column_spanner_outer:first-child {
+#hijkmdkjgp .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#zeyhcwjjqw .gt_column_spanner_outer:last-child {
+#hijkmdkjgp .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#zeyhcwjjqw .gt_column_spanner {
+#hijkmdkjgp .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2355,11 +2356,11 @@ but varying odds ratios.</p>
   width: 100%;
 }
 
-#zeyhcwjjqw .gt_spanner_row {
+#hijkmdkjgp .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#zeyhcwjjqw .gt_group_heading {
+#hijkmdkjgp .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2385,7 +2386,7 @@ but varying odds ratios.</p>
   text-align: left;
 }
 
-#zeyhcwjjqw .gt_empty_group_heading {
+#hijkmdkjgp .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2400,15 +2401,15 @@ but varying odds ratios.</p>
   vertical-align: middle;
 }
 
-#zeyhcwjjqw .gt_from_md > :first-child {
+#hijkmdkjgp .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#zeyhcwjjqw .gt_from_md > :last-child {
+#hijkmdkjgp .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#zeyhcwjjqw .gt_row {
+#hijkmdkjgp .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2427,7 +2428,7 @@ but varying odds ratios.</p>
   overflow-x: hidden;
 }
 
-#zeyhcwjjqw .gt_stub {
+#hijkmdkjgp .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2440,7 +2441,7 @@ but varying odds ratios.</p>
   padding-right: 5px;
 }
 
-#zeyhcwjjqw .gt_stub_row_group {
+#hijkmdkjgp .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2454,15 +2455,15 @@ but varying odds ratios.</p>
   vertical-align: top;
 }
 
-#zeyhcwjjqw .gt_row_group_first td {
+#hijkmdkjgp .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#zeyhcwjjqw .gt_row_group_first th {
+#hijkmdkjgp .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#zeyhcwjjqw .gt_summary_row {
+#hijkmdkjgp .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2472,16 +2473,16 @@ but varying odds ratios.</p>
   padding-right: 5px;
 }
 
-#zeyhcwjjqw .gt_first_summary_row {
+#hijkmdkjgp .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#zeyhcwjjqw .gt_first_summary_row.thick {
+#hijkmdkjgp .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#zeyhcwjjqw .gt_last_summary_row {
+#hijkmdkjgp .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2491,7 +2492,7 @@ but varying odds ratios.</p>
   border-bottom-color: #D3D3D3;
 }
 
-#zeyhcwjjqw .gt_grand_summary_row {
+#hijkmdkjgp .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2501,7 +2502,7 @@ but varying odds ratios.</p>
   padding-right: 5px;
 }
 
-#zeyhcwjjqw .gt_first_grand_summary_row {
+#hijkmdkjgp .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2511,7 +2512,7 @@ but varying odds ratios.</p>
   border-top-color: #D3D3D3;
 }
 
-#zeyhcwjjqw .gt_last_grand_summary_row_top {
+#hijkmdkjgp .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2521,11 +2522,11 @@ but varying odds ratios.</p>
   border-bottom-color: #D3D3D3;
 }
 
-#zeyhcwjjqw .gt_striped {
+#hijkmdkjgp .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#zeyhcwjjqw .gt_table_body {
+#hijkmdkjgp .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2534,7 +2535,7 @@ but varying odds ratios.</p>
   border-bottom-color: #D3D3D3;
 }
 
-#zeyhcwjjqw .gt_footnotes {
+#hijkmdkjgp .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2548,7 +2549,7 @@ but varying odds ratios.</p>
   border-right-color: #D3D3D3;
 }
 
-#zeyhcwjjqw .gt_footnote {
+#hijkmdkjgp .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2557,7 +2558,7 @@ but varying odds ratios.</p>
   padding-right: 5px;
 }
 
-#zeyhcwjjqw .gt_sourcenotes {
+#hijkmdkjgp .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2571,7 +2572,7 @@ but varying odds ratios.</p>
   border-right-color: #D3D3D3;
 }
 
-#zeyhcwjjqw .gt_sourcenote {
+#hijkmdkjgp .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2579,72 +2580,72 @@ but varying odds ratios.</p>
   padding-right: 5px;
 }
 
-#zeyhcwjjqw .gt_left {
+#hijkmdkjgp .gt_left {
   text-align: left;
 }
 
-#zeyhcwjjqw .gt_center {
+#hijkmdkjgp .gt_center {
   text-align: center;
 }
 
-#zeyhcwjjqw .gt_right {
+#hijkmdkjgp .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#zeyhcwjjqw .gt_font_normal {
+#hijkmdkjgp .gt_font_normal {
   font-weight: normal;
 }
 
-#zeyhcwjjqw .gt_font_bold {
+#hijkmdkjgp .gt_font_bold {
   font-weight: bold;
 }
 
-#zeyhcwjjqw .gt_font_italic {
+#hijkmdkjgp .gt_font_italic {
   font-style: italic;
 }
 
-#zeyhcwjjqw .gt_super {
+#hijkmdkjgp .gt_super {
   font-size: 65%;
 }
 
-#zeyhcwjjqw .gt_footnote_marks {
+#hijkmdkjgp .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#zeyhcwjjqw .gt_asterisk {
+#hijkmdkjgp .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#zeyhcwjjqw .gt_indent_1 {
+#hijkmdkjgp .gt_indent_1 {
   text-indent: 5px;
 }
 
-#zeyhcwjjqw .gt_indent_2 {
+#hijkmdkjgp .gt_indent_2 {
   text-indent: 10px;
 }
 
-#zeyhcwjjqw .gt_indent_3 {
+#hijkmdkjgp .gt_indent_3 {
   text-indent: 15px;
 }
 
-#zeyhcwjjqw .gt_indent_4 {
+#hijkmdkjgp .gt_indent_4 {
   text-indent: 20px;
 }
 
-#zeyhcwjjqw .gt_indent_5 {
+#hijkmdkjgp .gt_indent_5 {
   text-indent: 25px;
 }
 
-#zeyhcwjjqw .katex-display {
+#hijkmdkjgp .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#zeyhcwjjqw div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#hijkmdkjgp div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -2790,23 +2791,23 @@ summary(mortality_glmm)</code></pre>
 <pre class="r"><code>tbl_regression(mortality_glmm,
                exponentiate = T) %&gt;%
   modify_header(label= &quot;**Log Mixed Model**&quot;)</code></pre>
-<div id="ofegomzadl" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#ofegomzadl table {
+<div id="bdzgnjzdup" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#bdzgnjzdup table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#ofegomzadl thead, #ofegomzadl tbody, #ofegomzadl tfoot, #ofegomzadl tr, #ofegomzadl td, #ofegomzadl th {
+#bdzgnjzdup thead, #bdzgnjzdup tbody, #bdzgnjzdup tfoot, #bdzgnjzdup tr, #bdzgnjzdup td, #bdzgnjzdup th {
   border-style: none;
 }
 
-#ofegomzadl p {
+#bdzgnjzdup p {
   margin: 0;
   padding: 0;
 }
 
-#ofegomzadl .gt_table {
+#bdzgnjzdup .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -2832,12 +2833,12 @@ summary(mortality_glmm)</code></pre>
   border-left-color: #D3D3D3;
 }
 
-#ofegomzadl .gt_caption {
+#bdzgnjzdup .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ofegomzadl .gt_title {
+#bdzgnjzdup .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2849,7 +2850,7 @@ summary(mortality_glmm)</code></pre>
   border-bottom-width: 0;
 }
 
-#ofegomzadl .gt_subtitle {
+#bdzgnjzdup .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2861,7 +2862,7 @@ summary(mortality_glmm)</code></pre>
   border-top-width: 0;
 }
 
-#ofegomzadl .gt_heading {
+#bdzgnjzdup .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2873,13 +2874,13 @@ summary(mortality_glmm)</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#ofegomzadl .gt_bottom_border {
+#bdzgnjzdup .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ofegomzadl .gt_col_headings {
+#bdzgnjzdup .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2894,7 +2895,7 @@ summary(mortality_glmm)</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#ofegomzadl .gt_col_heading {
+#bdzgnjzdup .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2914,7 +2915,7 @@ summary(mortality_glmm)</code></pre>
   overflow-x: hidden;
 }
 
-#ofegomzadl .gt_column_spanner_outer {
+#bdzgnjzdup .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2926,15 +2927,15 @@ summary(mortality_glmm)</code></pre>
   padding-right: 4px;
 }
 
-#ofegomzadl .gt_column_spanner_outer:first-child {
+#bdzgnjzdup .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ofegomzadl .gt_column_spanner_outer:last-child {
+#bdzgnjzdup .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ofegomzadl .gt_column_spanner {
+#bdzgnjzdup .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2946,11 +2947,11 @@ summary(mortality_glmm)</code></pre>
   width: 100%;
 }
 
-#ofegomzadl .gt_spanner_row {
+#bdzgnjzdup .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ofegomzadl .gt_group_heading {
+#bdzgnjzdup .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2976,7 +2977,7 @@ summary(mortality_glmm)</code></pre>
   text-align: left;
 }
 
-#ofegomzadl .gt_empty_group_heading {
+#bdzgnjzdup .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2991,15 +2992,15 @@ summary(mortality_glmm)</code></pre>
   vertical-align: middle;
 }
 
-#ofegomzadl .gt_from_md > :first-child {
+#bdzgnjzdup .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ofegomzadl .gt_from_md > :last-child {
+#bdzgnjzdup .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ofegomzadl .gt_row {
+#bdzgnjzdup .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3018,7 +3019,7 @@ summary(mortality_glmm)</code></pre>
   overflow-x: hidden;
 }
 
-#ofegomzadl .gt_stub {
+#bdzgnjzdup .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3031,7 +3032,7 @@ summary(mortality_glmm)</code></pre>
   padding-right: 5px;
 }
 
-#ofegomzadl .gt_stub_row_group {
+#bdzgnjzdup .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3045,15 +3046,15 @@ summary(mortality_glmm)</code></pre>
   vertical-align: top;
 }
 
-#ofegomzadl .gt_row_group_first td {
+#bdzgnjzdup .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ofegomzadl .gt_row_group_first th {
+#bdzgnjzdup .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ofegomzadl .gt_summary_row {
+#bdzgnjzdup .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3063,16 +3064,16 @@ summary(mortality_glmm)</code></pre>
   padding-right: 5px;
 }
 
-#ofegomzadl .gt_first_summary_row {
+#bdzgnjzdup .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ofegomzadl .gt_first_summary_row.thick {
+#bdzgnjzdup .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ofegomzadl .gt_last_summary_row {
+#bdzgnjzdup .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3082,7 +3083,7 @@ summary(mortality_glmm)</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#ofegomzadl .gt_grand_summary_row {
+#bdzgnjzdup .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3092,7 +3093,7 @@ summary(mortality_glmm)</code></pre>
   padding-right: 5px;
 }
 
-#ofegomzadl .gt_first_grand_summary_row {
+#bdzgnjzdup .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3102,7 +3103,7 @@ summary(mortality_glmm)</code></pre>
   border-top-color: #D3D3D3;
 }
 
-#ofegomzadl .gt_last_grand_summary_row_top {
+#bdzgnjzdup .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3112,11 +3113,11 @@ summary(mortality_glmm)</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#ofegomzadl .gt_striped {
+#bdzgnjzdup .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ofegomzadl .gt_table_body {
+#bdzgnjzdup .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3125,7 +3126,7 @@ summary(mortality_glmm)</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#ofegomzadl .gt_footnotes {
+#bdzgnjzdup .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3139,7 +3140,7 @@ summary(mortality_glmm)</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#ofegomzadl .gt_footnote {
+#bdzgnjzdup .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -3148,7 +3149,7 @@ summary(mortality_glmm)</code></pre>
   padding-right: 5px;
 }
 
-#ofegomzadl .gt_sourcenotes {
+#bdzgnjzdup .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3162,7 +3163,7 @@ summary(mortality_glmm)</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#ofegomzadl .gt_sourcenote {
+#bdzgnjzdup .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -3170,72 +3171,72 @@ summary(mortality_glmm)</code></pre>
   padding-right: 5px;
 }
 
-#ofegomzadl .gt_left {
+#bdzgnjzdup .gt_left {
   text-align: left;
 }
 
-#ofegomzadl .gt_center {
+#bdzgnjzdup .gt_center {
   text-align: center;
 }
 
-#ofegomzadl .gt_right {
+#bdzgnjzdup .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ofegomzadl .gt_font_normal {
+#bdzgnjzdup .gt_font_normal {
   font-weight: normal;
 }
 
-#ofegomzadl .gt_font_bold {
+#bdzgnjzdup .gt_font_bold {
   font-weight: bold;
 }
 
-#ofegomzadl .gt_font_italic {
+#bdzgnjzdup .gt_font_italic {
   font-style: italic;
 }
 
-#ofegomzadl .gt_super {
+#bdzgnjzdup .gt_super {
   font-size: 65%;
 }
 
-#ofegomzadl .gt_footnote_marks {
+#bdzgnjzdup .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ofegomzadl .gt_asterisk {
+#bdzgnjzdup .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ofegomzadl .gt_indent_1 {
+#bdzgnjzdup .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ofegomzadl .gt_indent_2 {
+#bdzgnjzdup .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ofegomzadl .gt_indent_3 {
+#bdzgnjzdup .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ofegomzadl .gt_indent_4 {
+#bdzgnjzdup .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ofegomzadl .gt_indent_5 {
+#bdzgnjzdup .gt_indent_5 {
   text-indent: 25px;
 }
 
-#ofegomzadl .katex-display {
+#bdzgnjzdup .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#ofegomzadl div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#bdzgnjzdup div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -3317,23 +3318,23 @@ summary(mortality_glmm_cage)</code></pre>
 <pre class="r"><code>tbl_regression(mortality_glmm_cage,
                exponentiate = T) %&gt;%
   modify_header(label= &quot;**Log Mixed Model**&quot;)</code></pre>
-<div id="ilqdvsvjda" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#ilqdvsvjda table {
+<div id="pfndtwsfmi" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#pfndtwsfmi table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#ilqdvsvjda thead, #ilqdvsvjda tbody, #ilqdvsvjda tfoot, #ilqdvsvjda tr, #ilqdvsvjda td, #ilqdvsvjda th {
+#pfndtwsfmi thead, #pfndtwsfmi tbody, #pfndtwsfmi tfoot, #pfndtwsfmi tr, #pfndtwsfmi td, #pfndtwsfmi th {
   border-style: none;
 }
 
-#ilqdvsvjda p {
+#pfndtwsfmi p {
   margin: 0;
   padding: 0;
 }
 
-#ilqdvsvjda .gt_table {
+#pfndtwsfmi .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -3359,12 +3360,12 @@ summary(mortality_glmm_cage)</code></pre>
   border-left-color: #D3D3D3;
 }
 
-#ilqdvsvjda .gt_caption {
+#pfndtwsfmi .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ilqdvsvjda .gt_title {
+#pfndtwsfmi .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -3376,7 +3377,7 @@ summary(mortality_glmm_cage)</code></pre>
   border-bottom-width: 0;
 }
 
-#ilqdvsvjda .gt_subtitle {
+#pfndtwsfmi .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -3388,7 +3389,7 @@ summary(mortality_glmm_cage)</code></pre>
   border-top-width: 0;
 }
 
-#ilqdvsvjda .gt_heading {
+#pfndtwsfmi .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -3400,13 +3401,13 @@ summary(mortality_glmm_cage)</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#ilqdvsvjda .gt_bottom_border {
+#pfndtwsfmi .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ilqdvsvjda .gt_col_headings {
+#pfndtwsfmi .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3421,7 +3422,7 @@ summary(mortality_glmm_cage)</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#ilqdvsvjda .gt_col_heading {
+#pfndtwsfmi .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3441,7 +3442,7 @@ summary(mortality_glmm_cage)</code></pre>
   overflow-x: hidden;
 }
 
-#ilqdvsvjda .gt_column_spanner_outer {
+#pfndtwsfmi .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3453,15 +3454,15 @@ summary(mortality_glmm_cage)</code></pre>
   padding-right: 4px;
 }
 
-#ilqdvsvjda .gt_column_spanner_outer:first-child {
+#pfndtwsfmi .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ilqdvsvjda .gt_column_spanner_outer:last-child {
+#pfndtwsfmi .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ilqdvsvjda .gt_column_spanner {
+#pfndtwsfmi .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -3473,11 +3474,11 @@ summary(mortality_glmm_cage)</code></pre>
   width: 100%;
 }
 
-#ilqdvsvjda .gt_spanner_row {
+#pfndtwsfmi .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ilqdvsvjda .gt_group_heading {
+#pfndtwsfmi .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3503,7 +3504,7 @@ summary(mortality_glmm_cage)</code></pre>
   text-align: left;
 }
 
-#ilqdvsvjda .gt_empty_group_heading {
+#pfndtwsfmi .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -3518,15 +3519,15 @@ summary(mortality_glmm_cage)</code></pre>
   vertical-align: middle;
 }
 
-#ilqdvsvjda .gt_from_md > :first-child {
+#pfndtwsfmi .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ilqdvsvjda .gt_from_md > :last-child {
+#pfndtwsfmi .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ilqdvsvjda .gt_row {
+#pfndtwsfmi .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3545,7 +3546,7 @@ summary(mortality_glmm_cage)</code></pre>
   overflow-x: hidden;
 }
 
-#ilqdvsvjda .gt_stub {
+#pfndtwsfmi .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3558,7 +3559,7 @@ summary(mortality_glmm_cage)</code></pre>
   padding-right: 5px;
 }
 
-#ilqdvsvjda .gt_stub_row_group {
+#pfndtwsfmi .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3572,15 +3573,15 @@ summary(mortality_glmm_cage)</code></pre>
   vertical-align: top;
 }
 
-#ilqdvsvjda .gt_row_group_first td {
+#pfndtwsfmi .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ilqdvsvjda .gt_row_group_first th {
+#pfndtwsfmi .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ilqdvsvjda .gt_summary_row {
+#pfndtwsfmi .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3590,16 +3591,16 @@ summary(mortality_glmm_cage)</code></pre>
   padding-right: 5px;
 }
 
-#ilqdvsvjda .gt_first_summary_row {
+#pfndtwsfmi .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ilqdvsvjda .gt_first_summary_row.thick {
+#pfndtwsfmi .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ilqdvsvjda .gt_last_summary_row {
+#pfndtwsfmi .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3609,7 +3610,7 @@ summary(mortality_glmm_cage)</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#ilqdvsvjda .gt_grand_summary_row {
+#pfndtwsfmi .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3619,7 +3620,7 @@ summary(mortality_glmm_cage)</code></pre>
   padding-right: 5px;
 }
 
-#ilqdvsvjda .gt_first_grand_summary_row {
+#pfndtwsfmi .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3629,7 +3630,7 @@ summary(mortality_glmm_cage)</code></pre>
   border-top-color: #D3D3D3;
 }
 
-#ilqdvsvjda .gt_last_grand_summary_row_top {
+#pfndtwsfmi .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3639,11 +3640,11 @@ summary(mortality_glmm_cage)</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#ilqdvsvjda .gt_striped {
+#pfndtwsfmi .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ilqdvsvjda .gt_table_body {
+#pfndtwsfmi .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3652,7 +3653,7 @@ summary(mortality_glmm_cage)</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#ilqdvsvjda .gt_footnotes {
+#pfndtwsfmi .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3666,7 +3667,7 @@ summary(mortality_glmm_cage)</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#ilqdvsvjda .gt_footnote {
+#pfndtwsfmi .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -3675,7 +3676,7 @@ summary(mortality_glmm_cage)</code></pre>
   padding-right: 5px;
 }
 
-#ilqdvsvjda .gt_sourcenotes {
+#pfndtwsfmi .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3689,7 +3690,7 @@ summary(mortality_glmm_cage)</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#ilqdvsvjda .gt_sourcenote {
+#pfndtwsfmi .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -3697,72 +3698,72 @@ summary(mortality_glmm_cage)</code></pre>
   padding-right: 5px;
 }
 
-#ilqdvsvjda .gt_left {
+#pfndtwsfmi .gt_left {
   text-align: left;
 }
 
-#ilqdvsvjda .gt_center {
+#pfndtwsfmi .gt_center {
   text-align: center;
 }
 
-#ilqdvsvjda .gt_right {
+#pfndtwsfmi .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ilqdvsvjda .gt_font_normal {
+#pfndtwsfmi .gt_font_normal {
   font-weight: normal;
 }
 
-#ilqdvsvjda .gt_font_bold {
+#pfndtwsfmi .gt_font_bold {
   font-weight: bold;
 }
 
-#ilqdvsvjda .gt_font_italic {
+#pfndtwsfmi .gt_font_italic {
   font-style: italic;
 }
 
-#ilqdvsvjda .gt_super {
+#pfndtwsfmi .gt_super {
   font-size: 65%;
 }
 
-#ilqdvsvjda .gt_footnote_marks {
+#pfndtwsfmi .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ilqdvsvjda .gt_asterisk {
+#pfndtwsfmi .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ilqdvsvjda .gt_indent_1 {
+#pfndtwsfmi .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ilqdvsvjda .gt_indent_2 {
+#pfndtwsfmi .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ilqdvsvjda .gt_indent_3 {
+#pfndtwsfmi .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ilqdvsvjda .gt_indent_4 {
+#pfndtwsfmi .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ilqdvsvjda .gt_indent_5 {
+#pfndtwsfmi .gt_indent_5 {
   text-indent: 25px;
 }
 
-#ilqdvsvjda .katex-display {
+#pfndtwsfmi .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#ilqdvsvjda div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#pfndtwsfmi div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -3888,23 +3889,23 @@ NSSdiff_age &lt;- lmer(NSS_diff ~ treatment*age_gmc + treatment*age_gm + (1|Stud
 ## optimizer (nloptwrap) convergence code: 0 (OK)
 ## boundary (singular) fit: see help(&#39;isSingular&#39;)</code></pre>
 <pre class="r"><code>tbl_regression(NSSdiff_age)</code></pre>
-<div id="kfeunnscxc" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#kfeunnscxc table {
+<div id="ibjeymblzv" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ibjeymblzv table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#kfeunnscxc thead, #kfeunnscxc tbody, #kfeunnscxc tfoot, #kfeunnscxc tr, #kfeunnscxc td, #kfeunnscxc th {
+#ibjeymblzv thead, #ibjeymblzv tbody, #ibjeymblzv tfoot, #ibjeymblzv tr, #ibjeymblzv td, #ibjeymblzv th {
   border-style: none;
 }
 
-#kfeunnscxc p {
+#ibjeymblzv p {
   margin: 0;
   padding: 0;
 }
 
-#kfeunnscxc .gt_table {
+#ibjeymblzv .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -3930,12 +3931,12 @@ NSSdiff_age &lt;- lmer(NSS_diff ~ treatment*age_gmc + treatment*age_gm + (1|Stud
   border-left-color: #D3D3D3;
 }
 
-#kfeunnscxc .gt_caption {
+#ibjeymblzv .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#kfeunnscxc .gt_title {
+#ibjeymblzv .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -3947,7 +3948,7 @@ NSSdiff_age &lt;- lmer(NSS_diff ~ treatment*age_gmc + treatment*age_gm + (1|Stud
   border-bottom-width: 0;
 }
 
-#kfeunnscxc .gt_subtitle {
+#ibjeymblzv .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -3959,7 +3960,7 @@ NSSdiff_age &lt;- lmer(NSS_diff ~ treatment*age_gmc + treatment*age_gm + (1|Stud
   border-top-width: 0;
 }
 
-#kfeunnscxc .gt_heading {
+#ibjeymblzv .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -3971,13 +3972,13 @@ NSSdiff_age &lt;- lmer(NSS_diff ~ treatment*age_gmc + treatment*age_gm + (1|Stud
   border-right-color: #D3D3D3;
 }
 
-#kfeunnscxc .gt_bottom_border {
+#ibjeymblzv .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#kfeunnscxc .gt_col_headings {
+#ibjeymblzv .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3992,7 +3993,7 @@ NSSdiff_age &lt;- lmer(NSS_diff ~ treatment*age_gmc + treatment*age_gm + (1|Stud
   border-right-color: #D3D3D3;
 }
 
-#kfeunnscxc .gt_col_heading {
+#ibjeymblzv .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4012,7 +4013,7 @@ NSSdiff_age &lt;- lmer(NSS_diff ~ treatment*age_gmc + treatment*age_gm + (1|Stud
   overflow-x: hidden;
 }
 
-#kfeunnscxc .gt_column_spanner_outer {
+#ibjeymblzv .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4024,15 +4025,15 @@ NSSdiff_age &lt;- lmer(NSS_diff ~ treatment*age_gmc + treatment*age_gm + (1|Stud
   padding-right: 4px;
 }
 
-#kfeunnscxc .gt_column_spanner_outer:first-child {
+#ibjeymblzv .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#kfeunnscxc .gt_column_spanner_outer:last-child {
+#ibjeymblzv .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#kfeunnscxc .gt_column_spanner {
+#ibjeymblzv .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -4044,11 +4045,11 @@ NSSdiff_age &lt;- lmer(NSS_diff ~ treatment*age_gmc + treatment*age_gm + (1|Stud
   width: 100%;
 }
 
-#kfeunnscxc .gt_spanner_row {
+#ibjeymblzv .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#kfeunnscxc .gt_group_heading {
+#ibjeymblzv .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4074,7 +4075,7 @@ NSSdiff_age &lt;- lmer(NSS_diff ~ treatment*age_gmc + treatment*age_gm + (1|Stud
   text-align: left;
 }
 
-#kfeunnscxc .gt_empty_group_heading {
+#ibjeymblzv .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -4089,15 +4090,15 @@ NSSdiff_age &lt;- lmer(NSS_diff ~ treatment*age_gmc + treatment*age_gm + (1|Stud
   vertical-align: middle;
 }
 
-#kfeunnscxc .gt_from_md > :first-child {
+#ibjeymblzv .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#kfeunnscxc .gt_from_md > :last-child {
+#ibjeymblzv .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#kfeunnscxc .gt_row {
+#ibjeymblzv .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4116,7 +4117,7 @@ NSSdiff_age &lt;- lmer(NSS_diff ~ treatment*age_gmc + treatment*age_gm + (1|Stud
   overflow-x: hidden;
 }
 
-#kfeunnscxc .gt_stub {
+#ibjeymblzv .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4129,7 +4130,7 @@ NSSdiff_age &lt;- lmer(NSS_diff ~ treatment*age_gmc + treatment*age_gm + (1|Stud
   padding-right: 5px;
 }
 
-#kfeunnscxc .gt_stub_row_group {
+#ibjeymblzv .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -4143,15 +4144,15 @@ NSSdiff_age &lt;- lmer(NSS_diff ~ treatment*age_gmc + treatment*age_gm + (1|Stud
   vertical-align: top;
 }
 
-#kfeunnscxc .gt_row_group_first td {
+#ibjeymblzv .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#kfeunnscxc .gt_row_group_first th {
+#ibjeymblzv .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#kfeunnscxc .gt_summary_row {
+#ibjeymblzv .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -4161,16 +4162,16 @@ NSSdiff_age &lt;- lmer(NSS_diff ~ treatment*age_gmc + treatment*age_gm + (1|Stud
   padding-right: 5px;
 }
 
-#kfeunnscxc .gt_first_summary_row {
+#ibjeymblzv .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#kfeunnscxc .gt_first_summary_row.thick {
+#ibjeymblzv .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#kfeunnscxc .gt_last_summary_row {
+#ibjeymblzv .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4180,7 +4181,7 @@ NSSdiff_age &lt;- lmer(NSS_diff ~ treatment*age_gmc + treatment*age_gm + (1|Stud
   border-bottom-color: #D3D3D3;
 }
 
-#kfeunnscxc .gt_grand_summary_row {
+#ibjeymblzv .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -4190,7 +4191,7 @@ NSSdiff_age &lt;- lmer(NSS_diff ~ treatment*age_gmc + treatment*age_gm + (1|Stud
   padding-right: 5px;
 }
 
-#kfeunnscxc .gt_first_grand_summary_row {
+#ibjeymblzv .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4200,7 +4201,7 @@ NSSdiff_age &lt;- lmer(NSS_diff ~ treatment*age_gmc + treatment*age_gm + (1|Stud
   border-top-color: #D3D3D3;
 }
 
-#kfeunnscxc .gt_last_grand_summary_row_top {
+#ibjeymblzv .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -4210,11 +4211,11 @@ NSSdiff_age &lt;- lmer(NSS_diff ~ treatment*age_gmc + treatment*age_gm + (1|Stud
   border-bottom-color: #D3D3D3;
 }
 
-#kfeunnscxc .gt_striped {
+#ibjeymblzv .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#kfeunnscxc .gt_table_body {
+#ibjeymblzv .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -4223,7 +4224,7 @@ NSSdiff_age &lt;- lmer(NSS_diff ~ treatment*age_gmc + treatment*age_gm + (1|Stud
   border-bottom-color: #D3D3D3;
 }
 
-#kfeunnscxc .gt_footnotes {
+#ibjeymblzv .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -4237,7 +4238,7 @@ NSSdiff_age &lt;- lmer(NSS_diff ~ treatment*age_gmc + treatment*age_gm + (1|Stud
   border-right-color: #D3D3D3;
 }
 
-#kfeunnscxc .gt_footnote {
+#ibjeymblzv .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -4246,7 +4247,7 @@ NSSdiff_age &lt;- lmer(NSS_diff ~ treatment*age_gmc + treatment*age_gm + (1|Stud
   padding-right: 5px;
 }
 
-#kfeunnscxc .gt_sourcenotes {
+#ibjeymblzv .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -4260,7 +4261,7 @@ NSSdiff_age &lt;- lmer(NSS_diff ~ treatment*age_gmc + treatment*age_gm + (1|Stud
   border-right-color: #D3D3D3;
 }
 
-#kfeunnscxc .gt_sourcenote {
+#ibjeymblzv .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -4268,72 +4269,72 @@ NSSdiff_age &lt;- lmer(NSS_diff ~ treatment*age_gmc + treatment*age_gm + (1|Stud
   padding-right: 5px;
 }
 
-#kfeunnscxc .gt_left {
+#ibjeymblzv .gt_left {
   text-align: left;
 }
 
-#kfeunnscxc .gt_center {
+#ibjeymblzv .gt_center {
   text-align: center;
 }
 
-#kfeunnscxc .gt_right {
+#ibjeymblzv .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#kfeunnscxc .gt_font_normal {
+#ibjeymblzv .gt_font_normal {
   font-weight: normal;
 }
 
-#kfeunnscxc .gt_font_bold {
+#ibjeymblzv .gt_font_bold {
   font-weight: bold;
 }
 
-#kfeunnscxc .gt_font_italic {
+#ibjeymblzv .gt_font_italic {
   font-style: italic;
 }
 
-#kfeunnscxc .gt_super {
+#ibjeymblzv .gt_super {
   font-size: 65%;
 }
 
-#kfeunnscxc .gt_footnote_marks {
+#ibjeymblzv .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#kfeunnscxc .gt_asterisk {
+#ibjeymblzv .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#kfeunnscxc .gt_indent_1 {
+#ibjeymblzv .gt_indent_1 {
   text-indent: 5px;
 }
 
-#kfeunnscxc .gt_indent_2 {
+#ibjeymblzv .gt_indent_2 {
   text-indent: 10px;
 }
 
-#kfeunnscxc .gt_indent_3 {
+#ibjeymblzv .gt_indent_3 {
   text-indent: 15px;
 }
 
-#kfeunnscxc .gt_indent_4 {
+#ibjeymblzv .gt_indent_4 {
   text-indent: 20px;
 }
 
-#kfeunnscxc .gt_indent_5 {
+#ibjeymblzv .gt_indent_5 {
   text-indent: 25px;
 }
 
-#kfeunnscxc .katex-display {
+#ibjeymblzv .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#kfeunnscxc div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#ibjeymblzv div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -4408,10 +4409,20 @@ centered). This a within study interaction, ie. age is no effect
 modifier in a meta-analytical sense here.<br />
 Interpretation: The improvement in NSS is greater in MCAO than Sham, and
 even stronger so in older animals. 
+<script type="application/shiny-prerendered" data-context="server">
+  options(shiny.usecsp = FALSE)
+</script>
+
+
 <script type="application/shiny-prerendered" data-context="server-start">
+
+
 knitr::opts_chunk$set(echo = T)
 
-pacman::p_load(dplyr, 
+options(shiny.usecsp = FALSE)
+library(learnr)
+
+pacman::p_load(dplyr,
                knitr,
                metafor,
                survival,     # survival models
@@ -4425,9 +4436,10 @@ pacman::p_load(dplyr,
                broom.mixed,  # for table cleaning
                furrr,        # for table cleaning
                ggborderline, # enhance borders in plots
-               gtsummary, 
+               gtsummary,
                ggpubr,
-               learnr)
+               learnr,
+               broom.helpers)
 
 #setwd("S:/C01/iBikE/Studien/BIH-COReS/Teaching Advanced Course/Web Course/learnr/learnIAD-MA")
 
@@ -4490,42 +4502,41 @@ seOR <- c(summary(mortality_1)$coefficients[2,2],
        summary(mortality_3)$coefficients[2,2],
        summary(mortality_4)$coefficients[2,2])
 </script>
-
-
+ 
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::register_http_handlers(session, metadata = NULL)
 </script>
- 
+
+
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::prepare_tutorial_state(session)
 </script>
-
-
+ 
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::i18n_observe_tutorial_language(input, session)
 </script>
- 
+
+
 <script type="application/shiny-prerendered" data-context="server">
 session$onSessionEnded(function() {
         learnr:::event_trigger(session, "session_stop")
       })
 </script>
-
-
+ 
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz_theory-1", 
     question = structure("What distinguishes individual animal data meta-analysis from aggregate data meta-analysis?", html = TRUE, class = c("html", 
-    "character")), answers = list(structure(list(id = "lnr_ans_32beed1", 
+    "character")), answers = list(structure(list(id = "lnr_ans_138d703", 
         option = "It uses the raw animal-level records from each study instead of only aggregated summary statistics.", 
         value = "It uses the raw animal-level records from each study instead of only aggregated summary statistics.", 
         label = structure("It uses the raw animal-level records from each study instead of only aggregated summary statistics.", html = TRUE, class = c("html", 
         "character")), correct = TRUE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_ab56bc1", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_85eedea", 
         option = "It only works with published study means and standard errors.", 
         value = "It only works with published study means and standard errors.", 
         label = structure("It only works with published study means and standard errors.", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_52b1fd2", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_f1d615c", 
         option = "It excludes variability within studies.", value = "It excludes variability within studies.", 
         label = structure("It excludes variability within studies.", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
@@ -4537,23 +4548,24 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
     "character")), message = NULL, post_message = NULL), ids = list(
         answer = "quiz_theory-1-answer", question = "quiz_theory-1"), 
     loading = NULL, random_answer_order = FALSE, allow_retry = TRUE, 
-    seed = 1653985440.7298, options = list()), class = c("learnr_radio", 
+    seed = 1047629659.01216, options = list()), class = c("learnr_radio", 
 "tutorial_question")), session = session)
 </script>
- 
+
+
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz_theory-2", 
     question = structure("Why is a mixed-model framework appealing for IAD-MA?", html = TRUE, class = c("html", 
-    "character")), answers = list(structure(list(id = "lnr_ans_b248f81", 
+    "character")), answers = list(structure(list(id = "lnr_ans_cde05ce", 
         option = "It lets you model study-level differences as random effects while keeping animal-level information.", 
         value = "It lets you model study-level differences as random effects while keeping animal-level information.", 
         label = structure("It lets you model study-level differences as random effects while keeping animal-level information.", html = TRUE, class = c("html", 
         "character")), correct = TRUE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_78ec7c8", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_f9620c2", 
         option = "It discards between-study heterogeneity.", 
         value = "It discards between-study heterogeneity.", label = structure("It discards between-study heterogeneity.", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_b60839", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_f513884", 
         option = "It forces every study to have identical sample sizes.", 
         value = "It forces every study to have identical sample sizes.", 
         label = structure("It forces every study to have identical sample sizes.", html = TRUE, class = c("html", 
@@ -4565,29 +4577,32 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
     "character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", 
     "character")), message = NULL, post_message = NULL), ids = list(
         answer = "quiz_theory-2-answer", question = "quiz_theory-2"), 
-    loading = NULL, random_answer_order = FALSE, allow_retry = FALSE, 
-    seed = 1228875755.42776, options = list()), class = c("learnr_radio", 
+    loading = NULL, random_answer_order = FALSE, allow_retry = TRUE, 
+    seed = 49437721.9769788, options = list()), class = c("learnr_radio", 
 "tutorial_question")), session = session)
 </script>
-
-
+ 
 <script type="application/shiny-prerendered" data-context="server">
 `tutorial-exercise-first_ex-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-first_ex-code-editor`)), session)
 output$`tutorial-exercise-first_ex-output` <- renderUI({
   `tutorial-exercise-first_ex-result`()
 })
 </script>
- 
+
+
 <script type="application/shiny-prerendered" data-context="server">
-learnr:::store_exercise_cache(structure(list(label = "first_ex", global_setup = structure(c("knitr::opts_chunk$set(echo = T)", 
-"", "pacman::p_load(dplyr, ", "               knitr,", "               metafor,", 
-"               survival,     # survival models", "               survminer,    # displaying adjusted survival curves", 
+learnr:::store_exercise_cache(structure(list(label = "first_ex", global_setup = structure(c("", 
+"", "knitr::opts_chunk$set(echo = T)", "", "options(shiny.usecsp = FALSE)", 
+"library(learnr)", "", "pacman::p_load(dplyr,", "               knitr,", 
+"               metafor,", "               survival,     # survival models", 
+"               survminer,    # displaying adjusted survival curves", 
 "               lmerTest,     # classic mixed models (aka multi-level)", 
 "               brms,         # Bayesian (mixed) models", "               mice,         # multiple imputation", 
 "               zoo,", "               ggplot2,", "               broom,", 
 "               broom.mixed,  # for table cleaning", "               furrr,        # for table cleaning", 
-"               ggborderline, # enhance borders in plots", "               gtsummary, ", 
-"               ggpubr,", "               learnr)", "", "#setwd(\"S:/C01/iBikE/Studien/BIH-COReS/Teaching Advanced Course/Web Course/learnr/learnIAD-MA\")", 
+"               ggborderline, # enhance borders in plots", "               gtsummary,", 
+"               ggpubr,", "               learnr,", "               broom.helpers)", 
+"", "#setwd(\"S:/C01/iBikE/Studien/BIH-COReS/Teaching Advanced Course/Web Course/learnr/learnIAD-MA\")", 
 "", "DatIAD <- readRDS(\"IADdata.Rds\") # load data", "", "# Reshaping data to long format (needed later for longitudinal mixed modeling):", 
 "DatIAD_long <- data.frame(stack(DatIAD[c(\"NSSPre.MCAO..BL.\", ", 
 "                                         \"NSS24h.post\",", 
@@ -4631,10 +4646,10 @@ learnr:::store_exercise_cache(structure(list(label = "first_ex", global_setup = 
         eval = FALSE, echo = TRUE, results = "markup", tidy = FALSE, 
         tidy.opts = NULL, collapse = FALSE, prompt = FALSE, comment = NA, 
         highlight = FALSE, size = "normalsize", background = "#F7F7F7", 
-        strip.white = TRUE, cache = 0, cache.path = "online-script_cache/html/", 
+        strip.white = TRUE, cache = 0, cache.path = "online_script_cache/html/", 
         cache.vars = NULL, cache.lazy = TRUE, dependson = NULL, 
         autodep = FALSE, cache.rebuild = FALSE, fig.keep = "high", 
-        fig.show = "asis", fig.align = "default", fig.path = "online-script_files/figure-html/", 
+        fig.show = "asis", fig.align = "default", fig.path = "online_script_files/figure-html/", 
         dev = "png", dev.args = NULL, dpi = 192, fig.ext = "png", 
         fig.width = 6.5, fig.height = 4, fig.env = "figure", 
         fig.cap = NULL, fig.scap = NULL, fig.lp = "fig:", fig.subcap = NULL, 
@@ -4652,22 +4667,21 @@ learnr:::store_exercise_cache(structure(list(label = "first_ex", global_setup = 
     engine = "r", version = "4"), class = c("r", "tutorial_exercise"
 )))
 </script>
-
-
+ 
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz_long_format-1", 
     question = structure("Why do we reshape to long format for the longitudinal analysis?", html = TRUE, class = c("html", 
-    "character")), answers = list(structure(list(id = "lnr_ans_149187f", 
+    "character")), answers = list(structure(list(id = "lnr_ans_f327971", 
         option = "Long format stacks time points with a day indicator so mixed and longitudinal models can use them directly.", 
         value = "Long format stacks time points with a day indicator so mixed and longitudinal models can use them directly.", 
         label = structure("Long format stacks time points with a day indicator so mixed and longitudinal models can use them directly.", html = TRUE, class = c("html", 
         "character")), correct = TRUE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_58d171d", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_e91cd10", 
         option = "It removes missing values from the dataset.", 
         value = "It removes missing values from the dataset.", 
         label = structure("It removes missing values from the dataset.", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_6877ed9", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_c11a9b6", 
         option = "It duplicates observations to increase sample size.", 
         value = "It duplicates observations to increase sample size.", 
         label = structure("It duplicates observations to increase sample size.", html = TRUE, class = c("html", 
@@ -4679,21 +4693,22 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
     "character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", 
     "character")), message = NULL, post_message = NULL), ids = list(
         answer = "quiz_long_format-1-answer", question = "quiz_long_format-1"), 
-    loading = NULL, random_answer_order = FALSE, allow_retry = FALSE, 
-    seed = 1726454718.19606, options = list()), class = c("learnr_radio", 
+    loading = NULL, random_answer_order = FALSE, allow_retry = TRUE, 
+    seed = 156871154.426951, options = list()), class = c("learnr_radio", 
 "tutorial_question")), session = session)
 </script>
- 
+
+
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz_long_format-2", 
     question = structure("Which column in DatIAD_long tracks the time since stroke?", html = TRUE, class = c("html", 
-    "character")), answers = list(structure(list(id = "lnr_ans_f81856a", 
+    "character")), answers = list(structure(list(id = "lnr_ans_d1636c8", 
         option = "day", value = "day", label = structure("day", html = TRUE, class = c("html", 
         "character")), correct = TRUE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_1f083a5", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_c2c802", 
         option = "Treatment", value = "Treatment", label = structure("Treatment", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_c1c0f3", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_c9868b", 
         option = "indicator", value = "indicator", label = structure("indicator", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
     "tutorial_quiz_answer"))), button_labels = list(submit = structure("<span data-i18n=\"button.questionsubmit\">Submit Answer<\u002fspan>", html = TRUE, class = c("html", 
@@ -4703,29 +4718,32 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
     "character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", 
     "character")), message = NULL, post_message = NULL), ids = list(
         answer = "quiz_long_format-2-answer", question = "quiz_long_format-2"), 
-    loading = NULL, random_answer_order = FALSE, allow_retry = FALSE, 
-    seed = 2142288497.00242, options = list()), class = c("learnr_radio", 
+    loading = NULL, random_answer_order = FALSE, allow_retry = TRUE, 
+    seed = 1949509982.09219, options = list()), class = c("learnr_radio", 
 "tutorial_question")), session = session)
 </script>
-
-
+ 
 <script type="application/shiny-prerendered" data-context="server">
 `tutorial-exercise-datLong_ex-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-datLong_ex-code-editor`)), session)
 output$`tutorial-exercise-datLong_ex-output` <- renderUI({
   `tutorial-exercise-datLong_ex-result`()
 })
 </script>
- 
+
+
 <script type="application/shiny-prerendered" data-context="server">
-learnr:::store_exercise_cache(structure(list(label = "datLong_ex", global_setup = structure(c("knitr::opts_chunk$set(echo = T)", 
-"", "pacman::p_load(dplyr, ", "               knitr,", "               metafor,", 
-"               survival,     # survival models", "               survminer,    # displaying adjusted survival curves", 
+learnr:::store_exercise_cache(structure(list(label = "datLong_ex", global_setup = structure(c("", 
+"", "knitr::opts_chunk$set(echo = T)", "", "options(shiny.usecsp = FALSE)", 
+"library(learnr)", "", "pacman::p_load(dplyr,", "               knitr,", 
+"               metafor,", "               survival,     # survival models", 
+"               survminer,    # displaying adjusted survival curves", 
 "               lmerTest,     # classic mixed models (aka multi-level)", 
 "               brms,         # Bayesian (mixed) models", "               mice,         # multiple imputation", 
 "               zoo,", "               ggplot2,", "               broom,", 
 "               broom.mixed,  # for table cleaning", "               furrr,        # for table cleaning", 
-"               ggborderline, # enhance borders in plots", "               gtsummary, ", 
-"               ggpubr,", "               learnr)", "", "#setwd(\"S:/C01/iBikE/Studien/BIH-COReS/Teaching Advanced Course/Web Course/learnr/learnIAD-MA\")", 
+"               ggborderline, # enhance borders in plots", "               gtsummary,", 
+"               ggpubr,", "               learnr,", "               broom.helpers)", 
+"", "#setwd(\"S:/C01/iBikE/Studien/BIH-COReS/Teaching Advanced Course/Web Course/learnr/learnIAD-MA\")", 
 "", "DatIAD <- readRDS(\"IADdata.Rds\") # load data", "", "# Reshaping data to long format (needed later for longitudinal mixed modeling):", 
 "DatIAD_long <- data.frame(stack(DatIAD[c(\"NSSPre.MCAO..BL.\", ", 
 "                                         \"NSS24h.post\",", 
@@ -4769,10 +4787,10 @@ learnr:::store_exercise_cache(structure(list(label = "datLong_ex", global_setup 
         eval = FALSE, echo = TRUE, results = "markup", tidy = FALSE, 
         tidy.opts = NULL, collapse = FALSE, prompt = FALSE, comment = NA, 
         highlight = FALSE, size = "normalsize", background = "#F7F7F7", 
-        strip.white = TRUE, cache = 0, cache.path = "online-script_cache/html/", 
+        strip.white = TRUE, cache = 0, cache.path = "online_script_cache/html/", 
         cache.vars = NULL, cache.lazy = TRUE, dependson = NULL, 
         autodep = FALSE, cache.rebuild = FALSE, fig.keep = "high", 
-        fig.show = "asis", fig.align = "default", fig.path = "online-script_files/figure-html/", 
+        fig.show = "asis", fig.align = "default", fig.path = "online_script_files/figure-html/", 
         dev = "png", dev.args = NULL, dpi = 192, fig.ext = "png", 
         fig.width = 6.5, fig.height = 4, fig.env = "figure", 
         fig.cap = NULL, fig.scap = NULL, fig.lp = "fig:", fig.subcap = NULL, 
@@ -4790,22 +4808,21 @@ learnr:::store_exercise_cache(structure(list(label = "datLong_ex", global_setup 
     engine = "r", version = "4"), class = c("r", "tutorial_exercise"
 )))
 </script>
-
-
+ 
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz_two_stage_intro-1", 
     question = structure("What are the two steps in a two-stage IAD-MA?", html = TRUE, class = c("html", 
-    "character")), answers = list(structure(list(id = "lnr_ans_da2490c", 
+    "character")), answers = list(structure(list(id = "lnr_ans_4c809c1", 
         option = "Fit study-level models to get estimates, then meta-analyze those estimates across studies.", 
         value = "Fit study-level models to get estimates, then meta-analyze those estimates across studies.", 
         label = structure("Fit study-level models to get estimates, then meta-analyze those estimates across studies.", html = TRUE, class = c("html", 
         "character")), correct = TRUE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_783ce91", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_15ebf36", 
         option = "Pool all raw data and fit one model with no study term.", 
         value = "Pool all raw data and fit one model with no study term.", 
         label = structure("Pool all raw data and fit one model with no study term.", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_b17ecb2", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_ceb7f92", 
         option = "Fit a Bayesian model and then a frequentist model to compare results.", 
         value = "Fit a Bayesian model and then a frequentist model to compare results.", 
         label = structure("Fit a Bayesian model and then a frequentist model to compare results.", html = TRUE, class = c("html", 
@@ -4817,22 +4834,23 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
     "character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", 
     "character")), message = NULL, post_message = NULL), ids = list(
         answer = "quiz_two_stage_intro-1-answer", question = "quiz_two_stage_intro-1"), 
-    loading = NULL, random_answer_order = FALSE, allow_retry = FALSE, 
-    seed = 351627051.336261, options = list()), class = c("learnr_radio", 
+    loading = NULL, random_answer_order = FALSE, allow_retry = TRUE, 
+    seed = 1548629262.77886, options = list()), class = c("learnr_radio", 
 "tutorial_question")), session = session)
 </script>
- 
+
+
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "quiz_two_stage_intro-2", 
     question = structure("Which function in the tutorial meta-analyzes the study-level estimates for the post score?", html = TRUE, class = c("html", 
-    "character")), answers = list(structure(list(id = "lnr_ans_d7b3581", 
+    "character")), answers = list(structure(list(id = "lnr_ans_8f52774", 
         option = "`rma()` from the metafor package", value = "`rma()` from the metafor package", 
         label = structure("<code>rma()<\u002fcode> from the metafor package", html = TRUE, class = c("html", 
         "character")), correct = TRUE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_264fb70", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_e21aefa", 
         option = "`glm()`", value = "`glm()`", label = structure("<code>glm()<\u002fcode>", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_22d531f", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_17fb75b", 
         option = "`ggplot()`", value = "`ggplot()`", label = structure("<code>ggplot()<\u002fcode>", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL, type = "literal"), class = c("tutorial_question_answer", 
     "tutorial_quiz_answer"))), button_labels = list(submit = structure("<span data-i18n=\"button.questionsubmit\">Submit Answer<\u002fspan>", html = TRUE, class = c("html", 
@@ -4842,29 +4860,32 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
     "character")), incorrect = structure("Incorrect", html = TRUE, class = c("html", 
     "character")), message = NULL, post_message = NULL), ids = list(
         answer = "quiz_two_stage_intro-2-answer", question = "quiz_two_stage_intro-2"), 
-    loading = NULL, random_answer_order = FALSE, allow_retry = FALSE, 
-    seed = 98977565.95391, options = list()), class = c("learnr_radio", 
+    loading = NULL, random_answer_order = FALSE, allow_retry = TRUE, 
+    seed = 1475828002.31276, options = list()), class = c("learnr_radio", 
 "tutorial_question")), session = session)
 </script>
-
-
+ 
 <script type="application/shiny-prerendered" data-context="server">
 `tutorial-exercise-studyName_ex-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-studyName_ex-code-editor`)), session)
 output$`tutorial-exercise-studyName_ex-output` <- renderUI({
   `tutorial-exercise-studyName_ex-result`()
 })
 </script>
- 
+
+
 <script type="application/shiny-prerendered" data-context="server">
-learnr:::store_exercise_cache(structure(list(label = "studyName_ex", global_setup = structure(c("knitr::opts_chunk$set(echo = T)", 
-"", "pacman::p_load(dplyr, ", "               knitr,", "               metafor,", 
-"               survival,     # survival models", "               survminer,    # displaying adjusted survival curves", 
+learnr:::store_exercise_cache(structure(list(label = "studyName_ex", global_setup = structure(c("", 
+"", "knitr::opts_chunk$set(echo = T)", "", "options(shiny.usecsp = FALSE)", 
+"library(learnr)", "", "pacman::p_load(dplyr,", "               knitr,", 
+"               metafor,", "               survival,     # survival models", 
+"               survminer,    # displaying adjusted survival curves", 
 "               lmerTest,     # classic mixed models (aka multi-level)", 
 "               brms,         # Bayesian (mixed) models", "               mice,         # multiple imputation", 
 "               zoo,", "               ggplot2,", "               broom,", 
 "               broom.mixed,  # for table cleaning", "               furrr,        # for table cleaning", 
-"               ggborderline, # enhance borders in plots", "               gtsummary, ", 
-"               ggpubr,", "               learnr)", "", "#setwd(\"S:/C01/iBikE/Studien/BIH-COReS/Teaching Advanced Course/Web Course/learnr/learnIAD-MA\")", 
+"               ggborderline, # enhance borders in plots", "               gtsummary,", 
+"               ggpubr,", "               learnr,", "               broom.helpers)", 
+"", "#setwd(\"S:/C01/iBikE/Studien/BIH-COReS/Teaching Advanced Course/Web Course/learnr/learnIAD-MA\")", 
 "", "DatIAD <- readRDS(\"IADdata.Rds\") # load data", "", "# Reshaping data to long format (needed later for longitudinal mixed modeling):", 
 "DatIAD_long <- data.frame(stack(DatIAD[c(\"NSSPre.MCAO..BL.\", ", 
 "                                         \"NSS24h.post\",", 
@@ -4907,10 +4928,10 @@ learnr:::store_exercise_cache(structure(list(label = "studyName_ex", global_setu
         eval = FALSE, echo = TRUE, results = "markup", tidy = FALSE, 
         tidy.opts = NULL, collapse = FALSE, prompt = FALSE, comment = NA, 
         highlight = FALSE, size = "normalsize", background = "#F7F7F7", 
-        strip.white = TRUE, cache = 0, cache.path = "online-script_cache/html/", 
+        strip.white = TRUE, cache = 0, cache.path = "online_script_cache/html/", 
         cache.vars = NULL, cache.lazy = TRUE, dependson = NULL, 
         autodep = FALSE, cache.rebuild = FALSE, fig.keep = "high", 
-        fig.show = "asis", fig.align = "default", fig.path = "online-script_files/figure-html/", 
+        fig.show = "asis", fig.align = "default", fig.path = "online_script_files/figure-html/", 
         dev = "png", dev.args = NULL, dpi = 192, fig.ext = "png", 
         fig.width = 6.5, fig.height = 4, fig.env = "figure", 
         fig.cap = NULL, fig.scap = NULL, fig.lp = "fig:", fig.subcap = NULL, 
@@ -4926,25 +4947,28 @@ learnr:::store_exercise_cache(structure(list(label = "studyName_ex", global_setu
     engine = "r", version = "4"), class = c("r", "tutorial_exercise"
 )))
 </script>
-
-
+ 
 <script type="application/shiny-prerendered" data-context="server">
 `tutorial-exercise-regression_ex-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-regression_ex-code-editor`)), session)
 output$`tutorial-exercise-regression_ex-output` <- renderUI({
   `tutorial-exercise-regression_ex-result`()
 })
 </script>
- 
+
+
 <script type="application/shiny-prerendered" data-context="server">
-learnr:::store_exercise_cache(structure(list(label = "regression_ex", global_setup = structure(c("knitr::opts_chunk$set(echo = T)", 
-"", "pacman::p_load(dplyr, ", "               knitr,", "               metafor,", 
-"               survival,     # survival models", "               survminer,    # displaying adjusted survival curves", 
+learnr:::store_exercise_cache(structure(list(label = "regression_ex", global_setup = structure(c("", 
+"", "knitr::opts_chunk$set(echo = T)", "", "options(shiny.usecsp = FALSE)", 
+"library(learnr)", "", "pacman::p_load(dplyr,", "               knitr,", 
+"               metafor,", "               survival,     # survival models", 
+"               survminer,    # displaying adjusted survival curves", 
 "               lmerTest,     # classic mixed models (aka multi-level)", 
 "               brms,         # Bayesian (mixed) models", "               mice,         # multiple imputation", 
 "               zoo,", "               ggplot2,", "               broom,", 
 "               broom.mixed,  # for table cleaning", "               furrr,        # for table cleaning", 
-"               ggborderline, # enhance borders in plots", "               gtsummary, ", 
-"               ggpubr,", "               learnr)", "", "#setwd(\"S:/C01/iBikE/Studien/BIH-COReS/Teaching Advanced Course/Web Course/learnr/learnIAD-MA\")", 
+"               ggborderline, # enhance borders in plots", "               gtsummary,", 
+"               ggpubr,", "               learnr,", "               broom.helpers)", 
+"", "#setwd(\"S:/C01/iBikE/Studien/BIH-COReS/Teaching Advanced Course/Web Course/learnr/learnIAD-MA\")", 
 "", "DatIAD <- readRDS(\"IADdata.Rds\") # load data", "", "# Reshaping data to long format (needed later for longitudinal mixed modeling):", 
 "DatIAD_long <- data.frame(stack(DatIAD[c(\"NSSPre.MCAO..BL.\", ", 
 "                                         \"NSS24h.post\",", 
@@ -4996,10 +5020,10 @@ learnr:::store_exercise_cache(structure(list(label = "regression_ex", global_set
         tidy = FALSE, tidy.opts = NULL, collapse = FALSE, prompt = FALSE, 
         comment = NA, highlight = FALSE, size = "normalsize", 
         background = "#F7F7F7", strip.white = TRUE, cache = 0, 
-        cache.path = "online-script_cache/html/", cache.vars = NULL, 
+        cache.path = "online_script_cache/html/", cache.vars = NULL, 
         cache.lazy = TRUE, dependson = NULL, autodep = FALSE, 
         cache.rebuild = FALSE, fig.keep = "high", fig.show = "asis", 
-        fig.align = "default", fig.path = "online-script_files/figure-html/", 
+        fig.align = "default", fig.path = "online_script_files/figure-html/", 
         dev = "png", dev.args = NULL, dpi = 192, fig.ext = "png", 
         fig.width = 6.5, fig.height = 4, fig.env = "figure", 
         fig.cap = NULL, fig.scap = NULL, fig.lp = "fig:", fig.subcap = NULL, 
@@ -5019,25 +5043,28 @@ learnr:::store_exercise_cache(structure(list(label = "regression_ex", global_set
     engine = "r", version = "4"), class = c("r", "tutorial_exercise"
 )))
 </script>
-
-
+ 
 <script type="application/shiny-prerendered" data-context="server">
 `tutorial-exercise-gatherEffectsNaive-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-gatherEffectsNaive-code-editor`)), session)
 output$`tutorial-exercise-gatherEffectsNaive-output` <- renderUI({
   `tutorial-exercise-gatherEffectsNaive-result`()
 })
 </script>
- 
+
+
 <script type="application/shiny-prerendered" data-context="server">
-learnr:::store_exercise_cache(structure(list(label = "gatherEffectsNaive", global_setup = structure(c("knitr::opts_chunk$set(echo = T)", 
-"", "pacman::p_load(dplyr, ", "               knitr,", "               metafor,", 
-"               survival,     # survival models", "               survminer,    # displaying adjusted survival curves", 
+learnr:::store_exercise_cache(structure(list(label = "gatherEffectsNaive", global_setup = structure(c("", 
+"", "knitr::opts_chunk$set(echo = T)", "", "options(shiny.usecsp = FALSE)", 
+"library(learnr)", "", "pacman::p_load(dplyr,", "               knitr,", 
+"               metafor,", "               survival,     # survival models", 
+"               survminer,    # displaying adjusted survival curves", 
 "               lmerTest,     # classic mixed models (aka multi-level)", 
 "               brms,         # Bayesian (mixed) models", "               mice,         # multiple imputation", 
 "               zoo,", "               ggplot2,", "               broom,", 
 "               broom.mixed,  # for table cleaning", "               furrr,        # for table cleaning", 
-"               ggborderline, # enhance borders in plots", "               gtsummary, ", 
-"               ggpubr,", "               learnr)", "", "#setwd(\"S:/C01/iBikE/Studien/BIH-COReS/Teaching Advanced Course/Web Course/learnr/learnIAD-MA\")", 
+"               ggborderline, # enhance borders in plots", "               gtsummary,", 
+"               ggpubr,", "               learnr,", "               broom.helpers)", 
+"", "#setwd(\"S:/C01/iBikE/Studien/BIH-COReS/Teaching Advanced Course/Web Course/learnr/learnIAD-MA\")", 
 "", "DatIAD <- readRDS(\"IADdata.Rds\") # load data", "", "# Reshaping data to long format (needed later for longitudinal mixed modeling):", 
 "DatIAD_long <- data.frame(stack(DatIAD[c(\"NSSPre.MCAO..BL.\", ", 
 "                                         \"NSS24h.post\",", 
@@ -5085,10 +5112,10 @@ learnr:::store_exercise_cache(structure(list(label = "gatherEffectsNaive", globa
         tidy = FALSE, tidy.opts = NULL, collapse = FALSE, prompt = FALSE, 
         comment = NA, highlight = FALSE, size = "normalsize", 
         background = "#F7F7F7", strip.white = TRUE, cache = 0, 
-        cache.path = "online-script_cache/html/", cache.vars = NULL, 
+        cache.path = "online_script_cache/html/", cache.vars = NULL, 
         cache.lazy = TRUE, dependson = NULL, autodep = FALSE, 
         cache.rebuild = FALSE, fig.keep = "high", fig.show = "asis", 
-        fig.align = "default", fig.path = "online-script_files/figure-html/", 
+        fig.align = "default", fig.path = "online_script_files/figure-html/", 
         dev = "png", dev.args = NULL, dpi = 192, fig.ext = "png", 
         fig.width = 6.5, fig.height = 4, fig.env = "figure", 
         fig.cap = NULL, fig.scap = NULL, fig.lp = "fig:", fig.subcap = NULL, 
@@ -5106,25 +5133,28 @@ learnr:::store_exercise_cache(structure(list(label = "gatherEffectsNaive", globa
     engine = "r", version = "4"), class = c("r", "tutorial_exercise"
 )))
 </script>
-
-
+ 
 <script type="application/shiny-prerendered" data-context="server">
 `tutorial-exercise-twoStepMA-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-twoStepMA-code-editor`)), session)
 output$`tutorial-exercise-twoStepMA-output` <- renderUI({
   `tutorial-exercise-twoStepMA-result`()
 })
 </script>
- 
+
+
 <script type="application/shiny-prerendered" data-context="server">
-learnr:::store_exercise_cache(structure(list(label = "twoStepMA", global_setup = structure(c("knitr::opts_chunk$set(echo = T)", 
-"", "pacman::p_load(dplyr, ", "               knitr,", "               metafor,", 
-"               survival,     # survival models", "               survminer,    # displaying adjusted survival curves", 
+learnr:::store_exercise_cache(structure(list(label = "twoStepMA", global_setup = structure(c("", 
+"", "knitr::opts_chunk$set(echo = T)", "", "options(shiny.usecsp = FALSE)", 
+"library(learnr)", "", "pacman::p_load(dplyr,", "               knitr,", 
+"               metafor,", "               survival,     # survival models", 
+"               survminer,    # displaying adjusted survival curves", 
 "               lmerTest,     # classic mixed models (aka multi-level)", 
 "               brms,         # Bayesian (mixed) models", "               mice,         # multiple imputation", 
 "               zoo,", "               ggplot2,", "               broom,", 
 "               broom.mixed,  # for table cleaning", "               furrr,        # for table cleaning", 
-"               ggborderline, # enhance borders in plots", "               gtsummary, ", 
-"               ggpubr,", "               learnr)", "", "#setwd(\"S:/C01/iBikE/Studien/BIH-COReS/Teaching Advanced Course/Web Course/learnr/learnIAD-MA\")", 
+"               ggborderline, # enhance borders in plots", "               gtsummary,", 
+"               ggpubr,", "               learnr,", "               broom.helpers)", 
+"", "#setwd(\"S:/C01/iBikE/Studien/BIH-COReS/Teaching Advanced Course/Web Course/learnr/learnIAD-MA\")", 
 "", "DatIAD <- readRDS(\"IADdata.Rds\") # load data", "", "# Reshaping data to long format (needed later for longitudinal mixed modeling):", 
 "DatIAD_long <- data.frame(stack(DatIAD[c(\"NSSPre.MCAO..BL.\", ", 
 "                                         \"NSS24h.post\",", 
@@ -5169,10 +5199,10 @@ learnr:::store_exercise_cache(structure(list(label = "twoStepMA", global_setup =
         eval = FALSE, echo = TRUE, results = "markup", tidy = FALSE, 
         tidy.opts = NULL, collapse = FALSE, prompt = FALSE, comment = NA, 
         highlight = FALSE, size = "normalsize", background = "#F7F7F7", 
-        strip.white = TRUE, cache = 0, cache.path = "online-script_cache/html/", 
+        strip.white = TRUE, cache = 0, cache.path = "online_script_cache/html/", 
         cache.vars = NULL, cache.lazy = TRUE, dependson = NULL, 
         autodep = FALSE, cache.rebuild = FALSE, fig.keep = "high", 
-        fig.show = "asis", fig.align = "default", fig.path = "online-script_files/figure-html/", 
+        fig.show = "asis", fig.align = "default", fig.path = "online_script_files/figure-html/", 
         dev = "png", dev.args = NULL, dpi = 192, fig.ext = "png", 
         fig.width = 6.5, fig.height = 4, fig.env = "figure", 
         fig.cap = NULL, fig.scap = NULL, fig.lp = "fig:", fig.subcap = NULL, 
@@ -5192,25 +5222,28 @@ learnr:::store_exercise_cache(structure(list(label = "twoStepMA", global_setup =
     engine = "r", version = "4"), class = c("r", "tutorial_exercise"
 )))
 </script>
-
-
+ 
 <script type="application/shiny-prerendered" data-context="server">
 `tutorial-exercise-logreg_ex-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-logreg_ex-code-editor`)), session)
 output$`tutorial-exercise-logreg_ex-output` <- renderUI({
   `tutorial-exercise-logreg_ex-result`()
 })
 </script>
- 
+
+
 <script type="application/shiny-prerendered" data-context="server">
-learnr:::store_exercise_cache(structure(list(label = "logreg_ex", global_setup = structure(c("knitr::opts_chunk$set(echo = T)", 
-"", "pacman::p_load(dplyr, ", "               knitr,", "               metafor,", 
-"               survival,     # survival models", "               survminer,    # displaying adjusted survival curves", 
+learnr:::store_exercise_cache(structure(list(label = "logreg_ex", global_setup = structure(c("", 
+"", "knitr::opts_chunk$set(echo = T)", "", "options(shiny.usecsp = FALSE)", 
+"library(learnr)", "", "pacman::p_load(dplyr,", "               knitr,", 
+"               metafor,", "               survival,     # survival models", 
+"               survminer,    # displaying adjusted survival curves", 
 "               lmerTest,     # classic mixed models (aka multi-level)", 
 "               brms,         # Bayesian (mixed) models", "               mice,         # multiple imputation", 
 "               zoo,", "               ggplot2,", "               broom,", 
 "               broom.mixed,  # for table cleaning", "               furrr,        # for table cleaning", 
-"               ggborderline, # enhance borders in plots", "               gtsummary, ", 
-"               ggpubr,", "               learnr)", "", "#setwd(\"S:/C01/iBikE/Studien/BIH-COReS/Teaching Advanced Course/Web Course/learnr/learnIAD-MA\")", 
+"               ggborderline, # enhance borders in plots", "               gtsummary,", 
+"               ggpubr,", "               learnr,", "               broom.helpers)", 
+"", "#setwd(\"S:/C01/iBikE/Studien/BIH-COReS/Teaching Advanced Course/Web Course/learnr/learnIAD-MA\")", 
 "", "DatIAD <- readRDS(\"IADdata.Rds\") # load data", "", "# Reshaping data to long format (needed later for longitudinal mixed modeling):", 
 "DatIAD_long <- data.frame(stack(DatIAD[c(\"NSSPre.MCAO..BL.\", ", 
 "                                         \"NSS24h.post\",", 
@@ -5266,10 +5299,10 @@ learnr:::store_exercise_cache(structure(list(label = "logreg_ex", global_setup =
         tidy = FALSE, tidy.opts = NULL, collapse = FALSE, prompt = FALSE, 
         comment = NA, highlight = FALSE, size = "normalsize", 
         background = "#F7F7F7", strip.white = TRUE, cache = 0, 
-        cache.path = "online-script_cache/html/", cache.vars = NULL, 
+        cache.path = "online_script_cache/html/", cache.vars = NULL, 
         cache.lazy = TRUE, dependson = NULL, autodep = FALSE, 
         cache.rebuild = FALSE, fig.keep = "high", fig.show = "asis", 
-        fig.align = "default", fig.path = "online-script_files/figure-html/", 
+        fig.align = "default", fig.path = "online_script_files/figure-html/", 
         dev = "png", dev.args = NULL, dpi = 192, fig.ext = "png", 
         fig.width = 6.5, fig.height = 4, fig.env = "figure", 
         fig.cap = NULL, fig.scap = NULL, fig.lp = "fig:", fig.subcap = NULL, 
@@ -5290,25 +5323,28 @@ learnr:::store_exercise_cache(structure(list(label = "logreg_ex", global_setup =
     engine = "r", version = "4"), class = c("r", "tutorial_exercise"
 )))
 </script>
-
-
+ 
 <script type="application/shiny-prerendered" data-context="server">
 `tutorial-exercise-gather_odds_ratios-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-gather_odds_ratios-code-editor`)), session)
 output$`tutorial-exercise-gather_odds_ratios-output` <- renderUI({
   `tutorial-exercise-gather_odds_ratios-result`()
 })
 </script>
- 
+
+
 <script type="application/shiny-prerendered" data-context="server">
-learnr:::store_exercise_cache(structure(list(label = "gather_odds_ratios", global_setup = structure(c("knitr::opts_chunk$set(echo = T)", 
-"", "pacman::p_load(dplyr, ", "               knitr,", "               metafor,", 
-"               survival,     # survival models", "               survminer,    # displaying adjusted survival curves", 
+learnr:::store_exercise_cache(structure(list(label = "gather_odds_ratios", global_setup = structure(c("", 
+"", "knitr::opts_chunk$set(echo = T)", "", "options(shiny.usecsp = FALSE)", 
+"library(learnr)", "", "pacman::p_load(dplyr,", "               knitr,", 
+"               metafor,", "               survival,     # survival models", 
+"               survminer,    # displaying adjusted survival curves", 
 "               lmerTest,     # classic mixed models (aka multi-level)", 
 "               brms,         # Bayesian (mixed) models", "               mice,         # multiple imputation", 
 "               zoo,", "               ggplot2,", "               broom,", 
 "               broom.mixed,  # for table cleaning", "               furrr,        # for table cleaning", 
-"               ggborderline, # enhance borders in plots", "               gtsummary, ", 
-"               ggpubr,", "               learnr)", "", "#setwd(\"S:/C01/iBikE/Studien/BIH-COReS/Teaching Advanced Course/Web Course/learnr/learnIAD-MA\")", 
+"               ggborderline, # enhance borders in plots", "               gtsummary,", 
+"               ggpubr,", "               learnr,", "               broom.helpers)", 
+"", "#setwd(\"S:/C01/iBikE/Studien/BIH-COReS/Teaching Advanced Course/Web Course/learnr/learnIAD-MA\")", 
 "", "DatIAD <- readRDS(\"IADdata.Rds\") # load data", "", "# Reshaping data to long format (needed later for longitudinal mixed modeling):", 
 "DatIAD_long <- data.frame(stack(DatIAD[c(\"NSSPre.MCAO..BL.\", ", 
 "                                         \"NSS24h.post\",", 
@@ -5359,10 +5395,10 @@ learnr:::store_exercise_cache(structure(list(label = "gather_odds_ratios", globa
         tidy = FALSE, tidy.opts = NULL, collapse = FALSE, prompt = FALSE, 
         comment = NA, highlight = FALSE, size = "normalsize", 
         background = "#F7F7F7", strip.white = TRUE, cache = 0, 
-        cache.path = "online-script_cache/html/", cache.vars = NULL, 
+        cache.path = "online_script_cache/html/", cache.vars = NULL, 
         cache.lazy = TRUE, dependson = NULL, autodep = FALSE, 
         cache.rebuild = FALSE, fig.keep = "high", fig.show = "asis", 
-        fig.align = "default", fig.path = "online-script_files/figure-html/", 
+        fig.align = "default", fig.path = "online_script_files/figure-html/", 
         dev = "png", dev.args = NULL, dpi = 192, fig.ext = "png", 
         fig.width = 6.5, fig.height = 4, fig.env = "figure", 
         fig.cap = NULL, fig.scap = NULL, fig.lp = "fig:", fig.subcap = NULL, 
@@ -5384,25 +5420,28 @@ learnr:::store_exercise_cache(structure(list(label = "gather_odds_ratios", globa
     engine = "r", version = "4"), class = c("r", "tutorial_exercise"
 )))
 </script>
-
-
+ 
 <script type="application/shiny-prerendered" data-context="server">
 `tutorial-exercise-MortalityMA-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-MortalityMA-code-editor`)), session)
 output$`tutorial-exercise-MortalityMA-output` <- renderUI({
   `tutorial-exercise-MortalityMA-result`()
 })
 </script>
- 
+
+
 <script type="application/shiny-prerendered" data-context="server">
-learnr:::store_exercise_cache(structure(list(label = "MortalityMA", global_setup = structure(c("knitr::opts_chunk$set(echo = T)", 
-"", "pacman::p_load(dplyr, ", "               knitr,", "               metafor,", 
-"               survival,     # survival models", "               survminer,    # displaying adjusted survival curves", 
+learnr:::store_exercise_cache(structure(list(label = "MortalityMA", global_setup = structure(c("", 
+"", "knitr::opts_chunk$set(echo = T)", "", "options(shiny.usecsp = FALSE)", 
+"library(learnr)", "", "pacman::p_load(dplyr,", "               knitr,", 
+"               metafor,", "               survival,     # survival models", 
+"               survminer,    # displaying adjusted survival curves", 
 "               lmerTest,     # classic mixed models (aka multi-level)", 
 "               brms,         # Bayesian (mixed) models", "               mice,         # multiple imputation", 
 "               zoo,", "               ggplot2,", "               broom,", 
 "               broom.mixed,  # for table cleaning", "               furrr,        # for table cleaning", 
-"               ggborderline, # enhance borders in plots", "               gtsummary, ", 
-"               ggpubr,", "               learnr)", "", "#setwd(\"S:/C01/iBikE/Studien/BIH-COReS/Teaching Advanced Course/Web Course/learnr/learnIAD-MA\")", 
+"               ggborderline, # enhance borders in plots", "               gtsummary,", 
+"               ggpubr,", "               learnr,", "               broom.helpers)", 
+"", "#setwd(\"S:/C01/iBikE/Studien/BIH-COReS/Teaching Advanced Course/Web Course/learnr/learnIAD-MA\")", 
 "", "DatIAD <- readRDS(\"IADdata.Rds\") # load data", "", "# Reshaping data to long format (needed later for longitudinal mixed modeling):", 
 "DatIAD_long <- data.frame(stack(DatIAD[c(\"NSSPre.MCAO..BL.\", ", 
 "                                         \"NSS24h.post\",", 
@@ -5451,10 +5490,10 @@ learnr:::store_exercise_cache(structure(list(label = "MortalityMA", global_setup
         tidy = FALSE, tidy.opts = NULL, collapse = FALSE, prompt = FALSE, 
         comment = NA, highlight = FALSE, size = "normalsize", 
         background = "#F7F7F7", strip.white = TRUE, cache = 0, 
-        cache.path = "online-script_cache/html/", cache.vars = NULL, 
+        cache.path = "online_script_cache/html/", cache.vars = NULL, 
         cache.lazy = TRUE, dependson = NULL, autodep = FALSE, 
         cache.rebuild = FALSE, fig.keep = "high", fig.show = "asis", 
-        fig.align = "default", fig.path = "online-script_files/figure-html/", 
+        fig.align = "default", fig.path = "online_script_files/figure-html/", 
         dev = "png", dev.args = NULL, dpi = 192, fig.ext = "png", 
         fig.width = 6.5, fig.height = 4, fig.env = "figure", 
         fig.cap = NULL, fig.scap = NULL, fig.lp = "fig:", fig.subcap = NULL, 

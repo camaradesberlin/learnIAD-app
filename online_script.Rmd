@@ -5,9 +5,14 @@ output:
   learnr::tutorial:
     progressive: true
     allow_skip: true
+    self-contained: true
 runtime: shiny_prerendered
 date: ""
 ---
+
+```{r shiny_options, context="server", include=FALSE}
+  options(shiny.usecsp = FALSE)
+```
 
 <style>
 .video-fluid {
@@ -56,9 +61,14 @@ If you are in the need for some stats basics on regression and mixed models, her
 
 
 ```{r setup, echo = F}
+
+
 knitr::opts_chunk$set(echo = T)
 
-pacman::p_load(dplyr, 
+options(shiny.usecsp = FALSE)
+library(learnr)
+
+pacman::p_load(dplyr,
                knitr,
                metafor,
                survival,     # survival models
@@ -72,9 +82,10 @@ pacman::p_load(dplyr,
                broom.mixed,  # for table cleaning
                furrr,        # for table cleaning
                ggborderline, # enhance borders in plots
-               gtsummary, 
+               gtsummary,
                ggpubr,
-               learnr)
+               learnr,
+               broom.helpers)
 
 #setwd("S:/C01/iBikE/Studien/BIH-COReS/Teaching Advanced Course/Web Course/learnr/learnIAD-MA")
 
@@ -161,7 +172,8 @@ quiz(
     "Why is a mixed-model framework appealing for IAD-MA?",
     answer("It lets you model study-level differences as random effects while keeping animal-level information.", correct = TRUE),
     answer("It discards between-study heterogeneity."),
-    answer("It forces every study to have identical sample sizes.")
+    answer("It forces every study to have identical sample sizes."), 
+    allow_retry = TRUE
   )
 )
 ```
@@ -238,14 +250,14 @@ quiz(
     "Why do we reshape to long format for the longitudinal analysis?",
     answer("Long format stacks time points with a day indicator so mixed and longitudinal models can use them directly.", correct = TRUE),
     answer("It removes missing values from the dataset."),
-    answer("It duplicates observations to increase sample size.")
-  ),
+    answer("It duplicates observations to increase sample size."),
+  allow_retry = TRUE),
   question(
     "Which column in DatIAD_long tracks the time since stroke?",
     answer("day", correct = TRUE),
     answer("Treatment"),
-    answer("indicator")
-  )
+    answer("indicator"),
+  allow_retry = TRUE)
 )
 ```
 
@@ -302,14 +314,14 @@ quiz(
     "What are the two steps in a two-stage IAD-MA?",
     answer("Fit study-level models to get estimates, then meta-analyze those estimates across studies.", correct = TRUE),
     answer("Pool all raw data and fit one model with no study term."),
-    answer("Fit a Bayesian model and then a frequentist model to compare results.")
-  ),
+    answer("Fit a Bayesian model and then a frequentist model to compare results."),
+  allow_retry = TRUE),
   question(
     "Which function in the tutorial meta-analyzes the study-level estimates for the post score?",
     answer("`rma()` from the metafor package", correct = TRUE),
     answer("`glm()`"),
-    answer("`ggplot()`")
-  )
+    answer("`ggplot()`"),
+ allow_retry = TRUE )
 )
 ```
 
