@@ -2,6 +2,9 @@
 
 Interactive R/learnr tutorial for individual animal data meta-analysis (IAD-MA).
 
+## Live app
+The app is live at https://camarades.shinyapps.io/learn_IAD/
+
 ## What's here
 - `online script.Rmd`: main learnr tutorial (shiny_prerendered) covering IAD theory, data prep, two- and single-stage analyses for continuous/binary outcomes, and meta-regression; uses `IADdata.Rds` with packages like `dplyr`, `metafor`, `lmerTest`, `brms`, `mice`, `gtsummary`, etc.
 - `online-script.html`: rendered tutorial output.
@@ -13,3 +16,8 @@ Interactive R/learnr tutorial for individual animal data meta-analysis (IAD-MA).
 1. Open `learnIAD-MA.Rproj` in RStudio.
 2. Install required packages (e.g., `dplyr`, `metafor`, `lmerTest`, `brms`, `mice`, `gtsummary`, `learnr`, etc.).
 3. Knit or run `online script.Rmd` as a learnr tutorial (shiny prerendered) to explore the content.
+
+## Acknowledgements
+This app is created by Daniel Schulze & Alexandra Bannach-Brown. 
+This work is supported by Volkswagen Stiftung: Impuls für WIssenschaft grant. 
+
