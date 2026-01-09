@@ -14,61 +14,15 @@ date: ""
   options(shiny.usecsp = FALSE)
 ```
 
-<style>
-.video-fluid {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  display: block;
-  margin: 1em 0;
-}
-</style>
 
-## Welcome!
-
-Welcome to our tutorial on how to run individual animal data meta-analysis!
-(We will use the abbreviation IAD-MA in the future.)
-
-### Learning goals
-- Understand what distinguishes individual animal data meta-analysis from aggregate-data approaches.
-- Load, reshape, and explore the IAD dataset used in this course.
-- Fit study-level regressions (continuous and binary outcomes) and extract effect estimates.
-- Run two-stage meta-analyses with `metafor::rma()` and interpret forest plots.
-- Fit single-stage mixed models (linear and logistic) to pool individual-level data.
-- Build a simple meta-regression with study-level and individual-level moderators.
-
-This tutorial's structure:
-For the main part of the tutorial we will go through several analyses types. These analyses are also reflected in the tutorial's layout on the left. We will exchange the outcome variable in order to illustrate the programming differences, but the general steps in IAD-MA always remain the same.  
-
-
-Click the video below for the first part of the introduction.
-
-<video class="video-fluid" controls>
-  <source src="www/Welcome2.mp4" type="video/mp4">
-</video>
-
-
-__We will look at these outcomes__ (analysis type):
-- post treatment score — linear regression
-- mortality: yes/no — logistic regression
-- meta-regression with IAD
-
-If you are in the need for some stats basics on regression and mixed models, here is a stats introduction.
-
-<video class="video-fluid" controls>
-  <source src="www/stats intro.mp4" type="video/mp4">
-</video>
-
-
-```{r setup, echo = F}
-
+```{r setup, include=FALSE}
 
 knitr::opts_chunk$set(echo = T)
 
 options(shiny.usecsp = FALSE)
-library(learnr)
 
-pacman::p_load(dplyr,
+pacman::p_load(learnr, 
+               dplyr,
                knitr,
                metafor,
                survival,     # survival models
@@ -85,7 +39,8 @@ pacman::p_load(dplyr,
                gtsummary,
                ggpubr,
                learnr,
-               broom.helpers)
+               broom.helpers 
+)
 
 #setwd("S:/C01/iBikE/Studien/BIH-COReS/Teaching Advanced Course/Web Course/learnr/learnIAD-MA")
 
@@ -150,14 +105,56 @@ seOR <- c(summary(mortality_1)$coefficients[2,2],
 ```
 
 
+<style>
+.video-fluid {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 1em 0;
+}
+</style>
+
+## Welcome!
+
+Welcome to our tutorial on how to run individual animal data meta-analysis!
+(We will use the abbreviation IAD-MA in the future.)
+
+### Learning goals
+- Understand what distinguishes individual animal data meta-analysis from aggregate-data approaches.
+- Load, reshape, and explore the IAD dataset used in this course.
+- Fit study-level regressions (continuous and binary outcomes) and extract effect estimates.
+- Run two-stage meta-analyses with `metafor::rma()` and interpret forest plots.
+- Fit single-stage mixed models (linear and logistic) to pool individual-level data.
+- Build a simple meta-regression with study-level and individual-level moderators.
+
+This tutorial's structure:
+For the main part of the tutorial we will go through several analyses types. These analyses are also reflected in the tutorial's layout on the left. We will exchange the outcome variable in order to illustrate the programming differences, but the general steps in IAD-MA always remain the same.  
+
+
+Click the video below for the first part of the introduction.
+
+![](https://youtu.be/rky8oVL4XUM)
+
+<br>
+
+__We will look at these outcomes__ (analysis type):
+
+- post treatment score — linear regression
+- mortality: yes/no — logistic regression
+- meta-regression with IAD
+
+If you are in the need for some stats basics on regression and mixed models, here is a stats introduction.
+
+![](https://youtu.be/54mzaRygHs0)
+
 
 ## IAD: Theory
 
 Click the video below for a presentation of basic concepts of IAD-MA.
 
-<video class="video-fluid" controls>
-  <source src="www/intro IAD f2.mp4" type="video/mp4">
-</video>
+![](https://youtu.be/f8xL6VIpJ1o)
+
 
 ```{r quiz_theory, echo=FALSE}
 quiz(
@@ -193,9 +190,10 @@ Content of this section:
 
 Before heading into the main topic, let us introduce our working example. Click the video below to learn about it or read the summary below.
 
-<video class="video-fluid" controls>
-  <source src="www/data f2.mp4" type="video/mp4">
-</video>
+
+![](https://youtu.be/TUrt0fD3kE8)
+
+
 
 This data set is taken from a publication by Ramirez-Sanchez et al. (2024) on the efficacy of a new drug (JM-20) on treating ischemic stroke. The data comprises 4 experiments in different locations and with different species, age groups, and comorbidity. Three groups are part of each experiment: Sham (no actual stroke applied), MCAO (control, with stroke but no treatment), JM20 (stroke and treatment). Outcome was the Neuroscore (NSS) measuring motor skill impairment.  
 Data: https://zenodo.org/records/10689055  
@@ -212,10 +210,13 @@ DatIAD <- readRDS("IADdata.Rds") # load data
 __*Exercise:*__  
 Let's head into practicing. Display the first rows of data set by extending the line of R code below.
 
-```{r first_ex, exercise=TRUE, preexercise_code = "DatIAD <- readRDS('IADdata.Rds')", hint = "Use head(DatIAD) to inspect the first rows."}
+```{r first_ex, exercise=TRUE}
 head()
 ```
 
+```{r first_ex-hint}
+"Use head(DatIAD) to inspect the first rows."
+```
 
 ### 2 Data reshape
 
@@ -264,10 +265,15 @@ quiz(
 __*Exercise:*__  
 Again, display the first rows of the long format data set. Observe the difference to before.
 
-```{r datLong_ex, exercise=TRUE, preexercise_code = "DatIAD <- readRDS('IADdata.Rds'); DatIAD_long <- data.frame(stack(DatIAD[c('NSSPre.MCAO..BL.','NSS24h.post','NSS72h.post','NSS7d.post','NSS14d.post')]), rep(DatIAD$ID, 5), rep(DatIAD$Study, 5), rep(DatIAD$treatment, 5), rep(DatIAD$Attrition.Day, 5), rep(DatIAD$CageID, 5), rep(c(0, 1, 3, 7, 14), each = nrow(DatIAD))); colnames(DatIAD_long) <- c('NSS','indicator','ID','Study','Treatment','AttritionDay','CageID','day'); DatIAD_long$Treatment <- relevel(as.factor(DatIAD_long$Treatment), 'MCAO-control'); DatIAD_long$NSS <- as.numeric(DatIAD_long$NSS)", hint = "Call head(DatIAD_long) to see the reshaped data with day as time indicator."}
+```{r datLong_ex, exercise=TRUE}
 head()
 ```
 
+
+
+```{r datLong_ex-hint}
+"Call head(DatIAD_long) to see the reshaped data with day as time indicator."
+```
 
 
 ### 3 Plotting of longitudinal data
@@ -304,9 +310,8 @@ For IAD-MA, there are two main strategies: __Two-stage and single-stage analysis
 
 This video serves as an introduction:
 
-<video class="video-fluid" controls>
-  <source src="www/2stage f2.mp4" type="video/mp4">
-</video>
+![](https://youtu.be/RsNhm77XW6c)
+
 
 ```{r quiz_two_stage_intro, echo=FALSE}
 quiz(
@@ -352,7 +357,7 @@ _**Exercise:**_
 Before doing the same for the other 3 studies, first find their labels from the data frame (hint: variable is labeled "Study"):
 
 ```{r studyName_ex, exercise=TRUE}
-table(DatIAD$)
+table()
 ```
 
 ```{r studyName_ex-solution}
@@ -362,7 +367,7 @@ table(DatIAD$Study)
 _**Exercise:**_  
 Run regressions for the other 3 studies by extending the code. Summarize the results for yourself like we did above.
 
-```{r regression_ex, exercise=TRUE, preexercise_code = "DatIAD <- readRDS('IADdata.Rds')", hint = "Copy the Berlin example: lm(NSS7d.post ~ treatment, data = DatIAD[DatIAD$Study == 'Hav19', ]) and repeat for the other studies."}
+```{r regression_ex, exercise=TRUE}
 
 NSSpost_2 <- lm()
 summary(NSSpost_2)
@@ -374,6 +379,11 @@ NSSpost_4 <- lm()
 summary(NSSpost_4)
 
 ```
+
+```{r regression_ex-hint}
+"Copy the Berlin example: lm(NSS7d.post ~ treatment, data = DatIAD[DatIAD$Study == 'Hav19', ]) and repeat for the other studies."
+```
+
 
 ```{r regression_ex-solution}
 
@@ -403,9 +413,13 @@ We now need to gather the results from the separate regression models, ie, their
 __*Exercise:*__  
 Complete the listings of four numbers each from the previous regressions. Remember, meta-analysis always needs an effect-measure __and__ a measure of uncertainty (called standard error, SE, or variance):
 
-```{r gatherEffectsNaive, exercise=TRUE, preexercise_code = "DatIAD <- readRDS('IADdata.Rds'); NSSpost_1 <- lm(NSS7d.post ~ treatment, data = DatIAD[DatIAD$Study == 'Berlin19', ]); NSSpost_2 <- lm(NSS7d.post ~ treatment, data = DatIAD[DatIAD$Study == 'Hav19', ]); NSSpost_3 <- lm(NSS7d.post ~ treatment, data = DatIAD[DatIAD$Study == 'Hav20AGED', ]); NSSpost_4 <- lm(NSS7d.post ~ treatment, data = DatIAD[DatIAD$Study == 'Hav20STZ', ])", hint = "Plug in the estimate (coef[2,1]) and standard error (coef[2,2]) for treatment from each NSSpost model."}
+```{r gatherEffectsNaive, exercise=TRUE}
 mean_post <- c(1, -7.125, , )
 se_mean_post <- c(0.61, 1.74, , )
+```
+
+```{r gatherEffectsNaive-hint}
+"Plug in the estimate (coef[2,1]) and standard error (coef[2,2]) for treatment from each NSSpost model."
 ```
 
 ```{r gatherEffectsNaive-solution}
@@ -433,7 +447,7 @@ __*Exercise:*__
 
 You are now ready to conduct the second step, the meta-analysis itself. metafor uses a simple command called rma(), which takes the listed results from above. It calls the effects "y" and theLook at the output of this analysis, and forward to a (default) forest plot.
 
-```{r twoStepMA, exercise=TRUE, preexercise_code = "DatIAD <- readRDS('IADdata.Rds'); NSSpost_1 <- lm(NSS7d.post ~ treatment, data = DatIAD[DatIAD$Study == 'Berlin19', ]); NSSpost_2 <- lm(NSS7d.post ~ treatment, data = DatIAD[DatIAD$Study == 'Hav19', ]); NSSpost_3 <- lm(NSS7d.post ~ treatment, data = DatIAD[DatIAD$Study == 'Hav20AGED', ]); NSSpost_4 <- lm(NSS7d.post ~ treatment, data = DatIAD[DatIAD$Study == 'Hav20STZ', ]); mean_post <- c(summary(NSSpost_1)$coefficients[2,1], summary(NSSpost_2)$coefficients[2,1], summary(NSSpost_3)$coefficients[2,1], summary(NSSpost_4)$coefficients[2,1]); se_mean_post <- c(summary(NSSpost_1)$coefficients[2,2], summary(NSSpost_2)$coefficients[2,2], summary(NSSpost_3)$coefficients[2,2], summary(NSSpost_4)$coefficients[2,2])", hint = "Use mean_post for yi and se_mean_post for sei; pass the fitted object into forest()."}
+```{r twoStepMA, exercise=TRUE}
 
 mean_post_ma <- rma(yi = ,
                     sei = )
@@ -445,6 +459,11 @@ forest(,
 
 ```
 
+```{r twoStepMA-hint}
+"Use mean_post for yi and se_mean_post for sei; pass the fitted object into forest()."
+```
+
+
 Aggregated effect mean difference in NSS at day 7: -1.80, ie. slightly lower NSS in JM-20 group than in untreated MCAO control. Non-significant.
 
 
@@ -454,10 +473,7 @@ Aggregated effect mean difference in NSS at day 7: -1.80, ie. slightly lower NSS
 
 This video serves as an introduction:
 
-<video class="video-fluid" controls>
-  <source src="www/1stage 3.mp4" type="video/mp4">
-</video>
-
+![](https://youtu.be/Hh4E5UnPnDc)
 
 
 ## Post score: Single stage analysis
@@ -467,7 +483,7 @@ For a single stage analysis, we need to run a mixed model. ###!
 
 __*Exercise:*__  
 
-```{r Linear Mixed effect model for all studies - post NSS, echo=TRUE}
+```{r LinearMixedModel_allPostNSS, echo=TRUE}
 
 NSSpost_lmm <- lmer(NSS7d.post ~ treatment + (1 | Study), 
                     data = DatIAD)
@@ -479,7 +495,7 @@ The intercept (mean post NSS in untreated MCAO) varies slightly between studies 
 
 __Linear regression as linear mixed effect model (aka multi-level model): random-intercept, *random*-slope__
 
-```{r Linear Mixed effect model for all studies - post NSS - random slope, echo=TRUE}
+```{r LinearMixedModel_allPostNSS_randomSlope, echo=TRUE}
 
 NSSpost_lmm2 <- lmer(NSS7d.post ~ treatment + (treatment|Study),  
                      data = DatIAD)
@@ -504,11 +520,12 @@ Comparison with fixed-slope model yields a significant superiority of the random
 
 ## Intro: Binary outcomes (mortality)
 
-This video serves as an introduction to odds ratios: xx explain logOR
+This video serves as an introduction to: 
 
-<video class="video-fluid" controls>
-  <source src="www/log reg mixed f.mp4" type="video/mp4">
-</video>
+- explain log Odds Ratio
+- explain logistic regression
+
+![](https://youtu.be/nwBe40TZnNM)
 
 
 ## Mortality: Two-stage analysis
@@ -522,7 +539,7 @@ Two things change compared to linear regression:
 - we need to call glm() instead of lm(), and we have to specify the link with "family = binomial"
 - The output represents the treatment effect as logit-transformed odds ratios. We have transform it back to get a better grasp on the effect's meaning
 
-```{r Logistic regression model, echo=TRUE, message=FALSE, warning=FALSE}
+```{r LogisticRegressionModel, echo=TRUE, message=FALSE, warning=FALSE}
 
 # Study 1
 mortality_1 <- glm(survival ~ treatment, 
@@ -656,7 +673,7 @@ __*Exercise:*__
 
 You are now ready to conduct the second step, the meta-analysis itself. metafor uses a simple command called rma(), which takes the listed results from above. It calls the effects "y" and theLook at the output of this analysis, and forward to a (default) forest plot.
 
-```{r MortalityMA, exercise=TRUE, preexercise_code = "DatIAD <- readRDS('IADdata.Rds'); mortality_1 <- glm(survival ~ treatment, data = DatIAD[DatIAD$Study == 'Berlin19', ], family = binomial); mortality_2 <- glm(survival ~ treatment, data = DatIAD[DatIAD$Study == 'Hav19', ], family = binomial); mortality_3 <- glm(survival ~ treatment, data = DatIAD[DatIAD$Study == 'Hav20AGED', ], family = binomial); mortality_4 <- glm(survival ~ treatment, data = DatIAD[DatIAD$Study == 'Hav20STZ', ], family = binomial); logOR <- c(summary(mortality_1)$coefficients[2,1], summary(mortality_2)$coefficients[2,1], summary(mortality_3)$coefficients[2,1], summary(mortality_4)$coefficients[2,1]); seOR <- c(summary(mortality_1)$coefficients[2,2], summary(mortality_2)$coefficients[2,2], summary(mortality_3)$coefficients[2,2], summary(mortality_4)$coefficients[2,2])", hint = "Use logOR for yi and seOR for sei, then pass the fitted rma object into forest()."}
+```{r MortalityMA, exercise=TRUE}
 
 mortality_ma <- rma(yi = ,
                     sei = )
@@ -667,6 +684,11 @@ forest(,
        xlab = "log(OR)")
 
 ```
+
+```{r MortalityMA-hint}
+"Use logOR for yi and seOR for sei, then pass the fitted rma object into forest()."
+```
+
 
 ```{r MortalityMA-solution}
 
@@ -688,7 +710,7 @@ Aggregated effect of logOR = 0.35, ie. OR = 1.42: Odds of survival are 42% highe
 
 __Logistic regression as generalized mixed effect model__
 
-```{r Mortality mixed effect model, echo=TRUE}
+```{r MortalityMixedEffectModel, echo=TRUE}
 
 mortality_glmm <- glmer(survival ~ treatment + (1|Study), 
                         data = DatIAD, 
@@ -704,7 +726,7 @@ Overall effect of logOR = 0.34, ie. OR = 1.40: Odds of survival are 40% higher i
 The intercept (odds of survival in untreated MCAO) varies substantially between studies: intercept = -0.6267, SD = 0.7675. (SD is higher than |effect|)  
 
 
-```{r Mortality mixed effect model with cage, echo=TRUE}
+```{r MortalityMixedEffectModel_Cage, echo=TRUE}
 
 mortality_glmm_cage <- glmer(survival ~ treatment + (1|Study / Cage), 
                         data = DatIAD, 
@@ -715,6 +737,7 @@ tbl_regression(mortality_glmm_cage,
   modify_header(label= "**Log Mixed Model**")
 
 ```
+
 Overall effect of logOR = 0.51, ie. OR = 1.67: Odds of survival are 67% higher in JM-20 group than in untreated MCAO control. Non-significant.  
 The intercept (odds of survival in untreated MCAO) varies substantially between studies (intercept = -0.8113, SD = 0.8558; SD is as high as the |effect|),  
 and between cages (intercept = -0.8113, SD = 1.1151; SD is higher than |effect|).
@@ -730,7 +753,7 @@ For meta-regression, we need to enhance the mixed model with moderators, ie., in
 For separating within-study interactions and across-study interactions, we need to specify age in two flavours: group mean centered for each study, and the study-wise age means as well.
 Fo this example, the age variable is no real data but was simulated.
 
-```{r Linear Mixed effect model for all studies - diff NSS with interaction, echo=TRUE}
+```{r LinearMixedEffect_allDiffNSSinteraction, echo=TRUE}
 
 # group mean center age (by study)
 DatIAD <- DatIAD %>%
@@ -748,5 +771,6 @@ NSSdiff_age <- lmer(NSS_diff ~ treatment*age_gmc + treatment*age_gm + (1|Study),
 summary(NSSdiff_age)
 tbl_regression(NSSdiff_age)
 ```
+
 Only one significant interaction: (MCAO-Sham) by age (group mean centered). This a within study interaction, ie. age is no effect modifier in a meta-analytical sense here.  
 Interpretation: The improvement in NSS is greater in MCAO than Sham, and even stronger so in older animals.
